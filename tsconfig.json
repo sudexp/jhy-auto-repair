@@ -25,6 +25,6 @@
     "baseUrl": "src",
     "types": ["vitest/globals", "vite-plugin-svgr/client"]
   },
-  "include": ["src", "mui.d.ts"],
+  "include": ["src" /*, "mui.d.ts"*/],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
