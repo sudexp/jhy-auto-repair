@@ -1,6 +1,7 @@
 import { Outlet, useMatch } from 'react-router-dom';
 import { Box } from '@mui/material';
 
+import LayoutContainer from 'components/LayoutContainer';
 import bgImage from 'assets/bgImage.jpg';
 
 import NavBar from './NavBar';
@@ -11,12 +12,12 @@ const NavBarWithContent: React.FC = () => {
 
   const renderContent = () => {
     return (
-      <>
+      <LayoutContainer>
         <NavBar />
         <Box component='main'>
           <Outlet />
         </Box>
-      </>
+      </LayoutContainer>
     );
   };
 
@@ -33,12 +34,16 @@ const NavBarWithContent: React.FC = () => {
             height: 600, // TODO: adjust for small screens
           }}
         >
-          <NavBar />
-          <ImageContent />
+          <LayoutContainer>
+            <NavBar />
+            <ImageContent />
+          </LayoutContainer>
         </Box>
-        <Box component='main'>
-          <Outlet context={['qwert, test']} />
-        </Box>
+        <LayoutContainer>
+          <Box component='main'>
+            <Outlet context={['qwert, test']} />
+          </Box>
+        </LayoutContainer>
       </>
     );
   };

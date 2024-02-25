@@ -1,7 +1,24 @@
-import { Box } from '@mui/material';
+import { useMatch } from 'react-router-dom';
+import { AppBar, Toolbar } from '@mui/material';
+
+import { getBorderBottom } from './utils';
+import Logo from './Logo';
 
 const NavBar: React.FC = () => {
-  return <Box sx={{ height: 100, color: 'red' }}>NavBar</Box>;
+  const isRootPath = !!useMatch('/');
+
+  return (
+    <AppBar
+      position='sticky'
+      elevation={0}
+      color='transparent'
+      sx={{ borderBottom: getBorderBottom(isRootPath), borderBottomColor: '#d0d0d0', mb: 3 }}
+    >
+      <Toolbar disableGutters variant='dense' sx={{ justifyContent: 'space-between', alignItems: 'flex-start' }}>
+        <Logo />
+      </Toolbar>
+    </AppBar>
+  );
 };
 
 export default NavBar;
