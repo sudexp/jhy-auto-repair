@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useMatch } from 'react-router-dom';
+import { Link, useMatch } from 'react-router-dom';
 import {
   AppBar,
   Box,
@@ -21,8 +21,12 @@ import { greyColors, redColors } from 'theme/colors';
 import Logo from './Logo';
 import { getBorderBottom } from './utils';
 
-const navItems = ['PALVELUT', 'RENGASMYYNTI JA -HOTELLI', 'MEISTÄ', 'YHTEYSTIEDOT'];
-
+const navItems = [
+  { name: 'PALVELUT', path: '/services' },
+  { name: 'RENGASMYYNTI JA -HOTELLI', path: '/wheels' },
+  { name: 'MEISTÄ', path: '/about' },
+  { name: 'YHTEYSTIEDOT', path: '/contacts' },
+];
 const NavBar: React.FC = () => {
   const isRootPath = !!useMatch('/');
 
@@ -53,9 +57,9 @@ const NavBar: React.FC = () => {
             <Logo />
           </Box>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: redColors.dark }}>
-                {item}
+            {navItems.map(({ name, path }) => (
+              <Button key={name} component={Link} to={path} sx={{ color: redColors.dark }}>
+                {name}
               </Button>
             ))}
           </Box>
@@ -80,10 +84,10 @@ const NavBar: React.FC = () => {
             </Box>
             <Divider />
             <List>
-              {navItems.map((item) => (
-                <ListItem key={item} disablePadding>
-                  <ListItemButton>
-                    <ListItemText primary={item} />
+              {navItems.map(({ name, path }) => (
+                <ListItem key={name} disablePadding>
+                  <ListItemButton component={Link} to={path}>
+                    <ListItemText primary={name} />
                   </ListItemButton>
                 </ListItem>
               ))}
