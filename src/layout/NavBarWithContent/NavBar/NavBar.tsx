@@ -19,7 +19,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { greyColors, redColors } from 'theme/colors';
 
 import Logo from './Logo';
-import { getBorderBottom, getCursor, getDisableRipple, getTextShadow } from './utils';
+import { getBorderBottom, getColor, getCursor, getDisableRipple, getTextShadow } from './utils';
 
 const navItems = [
   { name: 'PALVELUT', path: '/services' },
@@ -97,7 +97,7 @@ const NavBar: React.FC = () => {
                   to={path}
                   disableRipple={getDisableRipple(isSelected)}
                   sx={{
-                    color: redColors.dark,
+                    color: getColor(isRootPath),
                     cursor: getCursor(isSelected),
                     textShadow: getTextShadow(isSelected),
                   }}
