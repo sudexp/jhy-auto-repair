@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 
-const AboutUs: React.FC = () => {
-  return <Box id='root'>Main Page</Box>;
+const About: React.FC = () => {
+  return <Box id='root'>About Us</Box>;
 };
 
-export default AboutUs;
+export default About;
