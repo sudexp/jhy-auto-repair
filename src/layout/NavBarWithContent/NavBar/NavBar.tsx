@@ -16,6 +16,8 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
+import { greyColors, redColors } from 'theme/colors';
+
 import Logo from './Logo';
 import { getBorderBottom } from './utils';
 
@@ -35,7 +37,7 @@ const NavBar: React.FC = () => {
         position='sticky'
         elevation={0}
         color='transparent'
-        sx={{ borderBottom: getBorderBottom(isRootPath), borderBottomColor: '#d0d0d0', mb: 3 }}
+        sx={{ borderBottom: getBorderBottom(isRootPath), borderBottomColor: greyColors.light, mb: 3 }}
       >
         <Toolbar disableGutters>
           <IconButton
@@ -45,14 +47,14 @@ const NavBar: React.FC = () => {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, ml: -1, display: { sm: 'none' } }}
           >
-            <MenuIcon sx={{ color: 'rgb(226,39,39)' }} />
+            <MenuIcon sx={{ color: redColors.dark }} />
           </IconButton>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}>
             <Logo />
           </Box>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: 'rgb(226,39,39)' }}>
+              <Button key={item} sx={{ color: redColors.dark }}>
                 {item}
               </Button>
             ))}

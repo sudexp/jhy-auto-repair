@@ -1,11 +1,12 @@
 import { Box, Typography } from '@mui/material';
 
 import LayoutContainer from 'components/LayoutContainer';
+import { greyColors, redColors } from 'theme/colors';
 
 const Footer: React.FC = () => {
   return (
     <Box sx={{ display: 'flex', flexShrink: 0 }}>
-      <LayoutContainer sx={{ py: { xs: 2, md: 4 }, bgcolor: '#e7e7e7', color: 'rgb(226,39,39)' }}>
+      <LayoutContainer sx={{ py: { xs: 2, md: 4 }, bgcolor: greyColors.dark, color: redColors.dark }}>
         <Typography>Footer</Typography>
       </LayoutContainer>
     </Box>
