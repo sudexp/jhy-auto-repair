@@ -64,7 +64,7 @@ const NavBar: React.FC = () => {
           >
             <MenuIcon
               sx={{
-                color: redColors.dark,
+                color: getColor(isRootPath),
               }}
             />
           </IconButton>
