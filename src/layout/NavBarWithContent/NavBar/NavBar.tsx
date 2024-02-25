@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useMatch } from 'react-router-dom';
+import { Link, useLocation, useMatch } from 'react-router-dom';
 import {
   AppBar,
   Box,
@@ -19,7 +19,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { greyColors, redColors } from 'theme/colors';
 
 import Logo from './Logo';
-import { getBorderBottom } from './utils';
+import { getBorderBottom, getCursor, getDisableRipple, getTextShadow } from './utils';
 
 const navItems = [
   { name: 'PALVELUT', path: '/services' },
@@ -29,6 +29,7 @@ const navItems = [
 ];
 const NavBar: React.FC = () => {
   const isRootPath = !!useMatch('/');
+  const { pathname } = useLocation();
 
   const [mobileOpen, setMobileOpen] = useState(false);
   const handleDrawerToggle = () => setMobileOpen((prevState) => !prevState);
@@ -86,18 +87,25 @@ const NavBar: React.FC = () => {
               },
             }}
           >
-            {navItems.map(({ name, path }) => (
-              <Button
-                key={name}
-                component={Link}
-                to={path}
-                sx={{
-                  color: redColors.dark,
-                }}
-              >
-                {name}
-              </Button>
-            ))}
+            {navItems.map(({ name, path }) => {
+              const isSelected = path === pathname;
+
+              return (
+                <Button
+                  key={name}
+                  component={Link}
+                  to={path}
+                  disableRipple={getDisableRipple(isSelected)}
+                  sx={{
+                    color: redColors.dark,
+                    cursor: getCursor(isSelected),
+                    textShadow: getTextShadow(isSelected),
+                  }}
+                >
+                  {name}
+                </Button>
+              );
+            })}
           </Box>
         </Toolbar>
       </AppBar>
@@ -126,13 +134,23 @@ const NavBar: React.FC = () => {
             </Box>
             <Divider />
             <List>
-              {navItems.map(({ name, path }) => (
-                <ListItem key={name} disablePadding>
-                  <ListItemButton component={Link} to={path}>
-                    <ListItemText primary={name} />
-                  </ListItemButton>
-                </ListItem>
-              ))}
+              {navItems.map(({ name, path }) => {
+                const isSelected = path === pathname;
+
+                return (
+                  <ListItem key={name} disablePadding>
+                    <ListItemButton component={Link} to={path}>
+                      <ListItemText
+                        primary={name}
+                        sx={{
+                          cursor: getCursor(isSelected),
+                          textShadow: getTextShadow(isSelected),
+                        }}
+                      />
+                    </ListItemButton>
+                  </ListItem>
+                );
+              })}
             </List>
           </Box>
         </Drawer>
