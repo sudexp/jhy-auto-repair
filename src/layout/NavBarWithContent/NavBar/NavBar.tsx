@@ -41,7 +41,11 @@ const NavBar: React.FC = () => {
         position='sticky'
         elevation={0}
         color='transparent'
-        sx={{ borderBottom: getBorderBottom(isRootPath), borderBottomColor: greyColors.light, mb: 3 }}
+        sx={{
+          borderBottom: getBorderBottom(isRootPath),
+          borderBottomColor: greyColors.light,
+          mb: 3,
+        }}
       >
         <Toolbar disableGutters>
           <IconButton
@@ -49,16 +53,48 @@ const NavBar: React.FC = () => {
             aria-label='open drawer'
             edge='start'
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, ml: -1, display: { sm: 'none' } }}
+            sx={{
+              display: {
+                sm: 'none',
+              },
+              mr: 2,
+              ml: -1,
+            }}
           >
-            <MenuIcon sx={{ color: redColors.dark }} />
+            <MenuIcon
+              sx={{
+                color: redColors.dark,
+              }}
+            />
           </IconButton>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: {
+                xs: 'none',
+                sm: 'block',
+              },
+            }}
+          >
             <Logo />
           </Box>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box
+            sx={{
+              display: {
+                xs: 'none',
+                sm: 'block',
+              },
+            }}
+          >
             {navItems.map(({ name, path }) => (
-              <Button key={name} component={Link} to={path} sx={{ color: redColors.dark }}>
+              <Button
+                key={name}
+                component={Link}
+                to={path}
+                sx={{
+                  color: redColors.dark,
+                }}
+              >
                 {name}
               </Button>
             ))}
@@ -74,8 +110,14 @@ const NavBar: React.FC = () => {
             keepMounted: true, // better open performance on mobile.
           }}
           sx={{
-            display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: '85%' },
+            display: {
+              xs: 'block',
+              sm: 'none',
+            },
+            '& .MuiDrawer-paper': {
+              boxSizing: 'border-box',
+              width: '85%',
+            },
           }}
         >
           <Box onClick={handleDrawerToggle}>
