@@ -10,6 +10,10 @@ export const getColor = (isRootPath: boolean) => {
   return isRootPath ? commmonColors.white : redColors.dark;
 };
 
+export const getDrawerTextColor = (isRootPath: boolean) => {
+  return isRootPath ? greyColors.text : redColors.dark;
+};
+
 export const getCursor = (isSelected: boolean) => {
   return isSelected ? 'default' : 'pointer';
 };
