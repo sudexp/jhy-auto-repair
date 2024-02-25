@@ -143,6 +143,7 @@ const NavBar: React.FC = () => {
                       <ListItemText
                         primary={name}
                         sx={{
+                          color: redColors.dark,
                           cursor: getCursor(isSelected),
                           textShadow: getTextShadow(isSelected),
                         }}
