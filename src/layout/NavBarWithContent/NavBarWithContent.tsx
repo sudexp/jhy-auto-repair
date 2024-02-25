@@ -41,7 +41,7 @@ const NavBarWithContent: React.FC = () => {
         </Box>
         <LayoutContainer>
           <Box component='main'>
-            <Outlet context={['qwert, test']} />
+            <Outlet /* context={[]} */ />
           </Box>
         </LayoutContainer>
       </>
