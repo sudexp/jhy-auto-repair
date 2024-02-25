@@ -1,4 +1,4 @@
-const commmonColors = {
+const commonColors = {
   white: '#ffffff',
   black: '#000000',
 };
@@ -18,4 +18,4 @@ const blueColors = {
   dark: '#2b2d42',
 };
 
-export { commmonColors, redColors, greyColors, blueColors };
+export { commonColors, redColors, greyColors, blueColors };
