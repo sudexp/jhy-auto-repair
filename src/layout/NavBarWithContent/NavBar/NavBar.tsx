@@ -1,8 +1,8 @@
 import { useMatch } from 'react-router-dom';
 import { AppBar, Toolbar } from '@mui/material';
 
-import { getBorderBottom } from './utils';
 import Logo from './Logo';
+import { getBorderBottom } from './utils';
 
 const NavBar: React.FC = () => {
   const isRootPath = !!useMatch('/');
