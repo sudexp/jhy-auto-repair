@@ -7,15 +7,15 @@ const INTER_SEMIBOLD = 'Inter Semibold';
 
 const theme = createTheme({
   spacing: 8, // default
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 360,
-      md: 768,
-      lg: 1440,
-      xl: 1920,
-    },
-  },
+  // breakpoints: {
+  //   values: {
+  //     xs: 0,
+  //     sm: 360,
+  //     md: 768,
+  //     lg: 1440,
+  //     xl: 1920,
+  //   },
+  // },
   typography: {
     fontSize: 14,
     fontWeightRegular: 400,
