@@ -7,12 +7,12 @@ const Logo: React.FC = () => {
   const isRootPath = !!useMatch('/');
 
   if (isRootPath) {
-    return <LogoSvg style={{ display: 'block' }} />;
+    return <LogoSvg style={{ display: 'inline-block' }} />;
   }
 
   return (
     <Link to='/'>
-      <LogoSvg style={{ display: 'block' }} />
+      <LogoSvg style={{ display: 'inline-block' }} />
     </Link>
   );
 };
