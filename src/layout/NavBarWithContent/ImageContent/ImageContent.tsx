@@ -16,7 +16,12 @@ const ImageContent: React.FC = () => {
       <Typography variant='ui2r' color={commonColors.white}>
         Palvelemme arkisin ma–pe 8-16.30 Jyväskylä, Kuormaajantie 6
       </Typography>
-      <PhoneLink phoneNumber='044 755 0266' />
+      <Stack direction='row' spacing={1}>
+        <Typography variant='ui3r' color={commonColors.white}>
+          Soita ja varaa aikaa:
+        </Typography>
+        <PhoneLink phoneNumber='044 755 0266' />
+      </Stack>
     </Stack>
   );
 };
