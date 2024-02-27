@@ -26,6 +26,9 @@ const theme = createTheme({
       disabledBackground: 'none',
       disabled: 'none',
     },
+    background: {
+      default: greyColors.light,
+    },
     common: {
       black: commonColors.black,
       white: commonColors.white,
