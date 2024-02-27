@@ -11,7 +11,7 @@ const Layout: React.FC = () => {
   return (
     <Stack spacing={getSpacing(isRootPath)} sx={{ minHeight: '100vh' }}>
       <NavBarWithContent />
-      <Footer />
+      {!isRootPath && <Footer />}
     </Stack>
   );
 };

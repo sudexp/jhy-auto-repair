@@ -1,7 +1,5 @@
-import { Box } from '@mui/material';
-
 const Root: React.FC = () => {
-  return <Box id='root'>Main Page</Box>;
+  return null;
 };
 
 export default Root;

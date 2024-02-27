@@ -3,6 +3,7 @@ import { Box } from '@mui/material';
 
 import LayoutContainer from 'components/LayoutContainer';
 import bgImage from 'assets/jpg/bgImage.jpg';
+import Footer from 'layout/Footer';
 
 import NavBar from './NavBar';
 import ImageContent from './ImageContent';
@@ -31,17 +32,20 @@ const NavBarWithContent: React.FC = () => {
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundAttachment: 'scroll',
-            height: 600, // TODO: adjust for small screens
+            height: '100vh',
+            display: 'grid',
+            gridTemplateRows: '1fr auto',
           }}
         >
           <LayoutContainer>
             <NavBar />
             <ImageContent />
           </LayoutContainer>
+          <Footer />
         </Box>
         <LayoutContainer>
           <Box component='main'>
-            <Outlet /* context={[]} */ />
+            <Outlet />
           </Box>
         </LayoutContainer>
       </>
