@@ -1,4 +1,5 @@
 import { ThemeProvider } from '@mui/system';
+import { HelmetProvider } from 'react-helmet-async';
 import { RouterProvider } from 'react-router-dom';
 
 import theme from 'theme';
@@ -9,7 +10,9 @@ import 'leaflet/dist/leaflet.css';
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <RouterProvider router={router} />
+      <HelmetProvider>
+        <RouterProvider router={router} />
+      </HelmetProvider>
     </ThemeProvider>
   );
 };
