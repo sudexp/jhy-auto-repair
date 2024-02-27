@@ -8,6 +8,7 @@ const LeafletMap: React.FC = () => {
         center={[62.275079586373295, 25.78202303900985]}
         zoom={13}
         scrollWheelZoom={false}
+        attributionControl={false}
         style={{ height: '400px', width: '100%' }}
       >
         <TileLayer
