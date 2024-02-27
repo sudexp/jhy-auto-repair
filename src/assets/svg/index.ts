@@ -1,5 +1,5 @@
 // / <reference types="vite-plugin-svgr/client" />
 
-import LogoSvg from './redCar.svg?react';
+import LogoSvg from './logo.svg?react';
 
 export { LogoSvg };

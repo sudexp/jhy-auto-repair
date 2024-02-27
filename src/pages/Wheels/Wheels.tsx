@@ -25,7 +25,7 @@ const Wheels: React.FC = () => {
               component='img'
               sx={{ display: 'block', maxHeight: '100%', maxWidth: '100%' }}
               alt='Rengasmyynti'
-              src='/src/assets/jpg/tires.jpg'
+              src='/src/assets/jpg/wheels.jpg'
             />
             <Stack spacing={1}>
               <Typography variant='p1'>RENGASMYYNTI</Typography>
@@ -42,7 +42,7 @@ const Wheels: React.FC = () => {
               component='img'
               sx={{ display: 'block', maxHeight: '100%', maxWidth: '100%' }}
               alt='Rengashotelli'
-              src='/src/assets/jpg/tires.jpg'
+              src='/src/assets/jpg/hotel.jpg'
             />
             <Stack spacing={1}>
               <Typography variant='p1'>RENGASHOTELLI</Typography>
