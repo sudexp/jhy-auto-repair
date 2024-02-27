@@ -1,13 +1,7 @@
 import { Box } from '@mui/material';
 
-import LeafletMap from './LeafletMap';
-
 const Root: React.FC = () => {
-  return (
-    <Box id='root'>
-      <LeafletMap />
-    </Box>
-  );
+  return <Box id='root'>Main Page</Box>;
 };
 
 export default Root;
