@@ -1,4 +1,6 @@
-import { Box, Stack, Typography } from '@mui/material';
+import { Box, Link, Stack, Typography } from '@mui/material';
+
+import { commonColors } from 'theme/colors';
 
 const Wheels: React.FC = () => {
   return (
@@ -40,10 +42,24 @@ const Wheels: React.FC = () => {
           <Stack spacing={1}>
             <Box
               component='img'
-              sx={{ display: 'block', maxHeight: '100%', maxWidth: '100%' }}
+              sx={{ display: 'block', maxHeight: '100%', maxWidth: '100%', position: 'relative' }}
               alt='Rengashotelli'
               src='/src/assets/jpg/hotel.jpg'
             />
+            <Box
+              sx={{
+                position: 'absolute',
+              }}
+            >
+              <Link
+                href='https://www.freepik.com'
+                target='_blank'
+                rel='noopener noreferrer'
+                sx={{ color: commonColors.white, textDecoration: 'none', fontSize: '0.5rem', ml: 0.5 }}
+              >
+                designed by fxquadro - Freepik.com
+              </Link>
+            </Box>
             <Stack spacing={1}>
               <Typography variant='p1'>RENGASHOTELLI</Typography>
               <Typography variant='p2'>
