@@ -27,7 +27,7 @@ const Contacts: React.FC = () => {
               alt='Asentaja2'
               src='/src/assets/png/photo2.png'
             />
-            <Typography variant='p2'>Asentaja XXXXXX</Typography>
+            <Typography variant='p2'>Asentaja Aaro</Typography>
           </Stack>
         </Stack>
         <Box id='contacts' sx={{ maxWidth: theme.breakpoints.values.lg, margin: '0 auto' }}>
