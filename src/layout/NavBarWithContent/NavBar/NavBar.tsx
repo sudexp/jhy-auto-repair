@@ -24,7 +24,6 @@ import { getBorderBottom, getColor, getCursor, getDisableRipple, getDrawerTextCo
 const navItems = [
   { name: 'PALVELUT', path: '/services' },
   { name: 'RENGASMYYNTI JA -HOTELLI', path: '/wheels' },
-  { name: 'MEISTÄ', path: '/about' },
   { name: 'YHTEYSTIEDOT', path: '/contacts' },
 ];
 const NavBar: React.FC = () => {
