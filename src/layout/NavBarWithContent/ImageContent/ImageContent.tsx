@@ -7,20 +7,23 @@ const ImageContent: React.FC = () => {
   return (
     <Stack spacing={4}>
       <Typography variant='h2' color={commonColors.white}>
-        AUTOKORJAAMO JYVÄSKYLÄN HUOLTOYKKÖSET
+        JYVÄSKYLÄN HUOLTOYKKÖSET
       </Typography>
       <Typography variant='ui2r' color={commonColors.white}>
-        Korjaamo Huoltoykkösten Jyväskylän Kuormaajantien autokorjaamo palveluksessasi, tervetuloa paremman autohuollon ja korjaamon
-        asiakkaaksi, jossa ajatellaan kuskin kukkaron ja auton parasta – hintatakuulla tottakai!
+        Jyväskylän huoltoykköset Oy palveluksessasi.
       </Typography>
       <Typography variant='ui2r' color={commonColors.white}>
-        Palvelemme arkisin ma–pe 8-16.30 Jyväskylä, Kuormaajantie 6
+        Tervetuloa paremman autohuollon asiakkaaksi, jossa ajatelemme kuskin kukkaron ja auton parasta yli kymmenen vuoden kokemuksella ja
+        hintatakuulla tottakai.
+      </Typography>
+      <Typography variant='ui2r' color={commonColors.white}>
+        Palvelemme arkisin ma–pe 8-16.30 osoiteessa 40320, Jyväskylä, Kuormaajantie 6.
       </Typography>
       <Stack direction='row' spacing={1}>
         <Typography variant='ui3r' color={commonColors.white}>
           Soita ja varaa aikaa:
         </Typography>
-        <PhoneLink phoneNumber='044 755 0266' />
+        <PhoneLink phoneNumber='0452393591' />
       </Stack>
     </Stack>
   );
