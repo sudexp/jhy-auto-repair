@@ -8,6 +8,7 @@ import {
   TireBalancingSvg,
   DiagnosisSvg,
   MaintenanceWarrantySvg,
+  RustSvg,
 } from 'assets/svg/service-icons';
 
 interface Service {
@@ -55,7 +56,7 @@ export const services: Service[] = [
   {
     id: 7,
     title: 'Ruostevauriokorjaukset',
-    component: <WheelSvg />,
+    component: <RustSvg />,
   },
   {
     id: 8,
