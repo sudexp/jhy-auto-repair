@@ -11,7 +11,8 @@ import RustSvg from './rust.svg?react';
 import HeaterSvg from './heater.svg?react';
 import EmissionSvg from './emission.svg?react';
 import BatterySvg from './battery.svg?react';
-import OilChange from './oil_change.svg?react';
+import OilChangeSvg from './oil_change.svg?react';
+import EngineSvg from './engine.svg?react';
 
 export {
   WheelSvg,
@@ -25,5 +26,6 @@ export {
   HeaterSvg,
   EmissionSvg,
   BatterySvg,
-  OilChange,
+  OilChangeSvg,
+  EngineSvg,
 };
