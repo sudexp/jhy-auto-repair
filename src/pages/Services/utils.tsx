@@ -9,6 +9,7 @@ import {
   DiagnosisSvg,
   MaintenanceWarrantySvg,
   RustSvg,
+  HeaterSvg,
 } from 'assets/svg/service-icons';
 
 interface Service {
@@ -61,7 +62,7 @@ export const services: Service[] = [
   {
     id: 8,
     title: 'Sisätilalämmittimet',
-    component: <WheelSvg />,
+    component: <HeaterSvg />,
   },
   {
     id: 9,

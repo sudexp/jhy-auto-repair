@@ -8,5 +8,16 @@ import TireBalancingSvg from './tire_balancing.svg?react';
 import DiagnosisSvg from './diagnosis.svg?react';
 import MaintenanceWarrantySvg from './maintenance_warranty.svg?react';
 import RustSvg from './rust.svg?react';
+import HeaterSvg from './heater.svg?react';
 
-export { WheelSvg, ChangeVehicleSvg, ServiceSvg, ConditioningSvg, TireBalancingSvg, DiagnosisSvg, MaintenanceWarrantySvg, RustSvg };
+export {
+  WheelSvg,
+  ChangeVehicleSvg,
+  ServiceSvg,
+  ConditioningSvg,
+  TireBalancingSvg,
+  DiagnosisSvg,
+  MaintenanceWarrantySvg,
+  RustSvg,
+  HeaterSvg,
+};
