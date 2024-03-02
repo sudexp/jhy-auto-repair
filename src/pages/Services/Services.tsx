@@ -35,6 +35,7 @@ const Services: React.FC = () => {
             })}
           </List>
         </Box>
+        <Typography variant='p1'>… ja kaikki muu mahdollinen autosi hyvinvoinnin tueksi!</Typography>
       </Stack>
     </>
   );
