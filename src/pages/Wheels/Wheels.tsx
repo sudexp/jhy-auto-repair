@@ -8,8 +8,10 @@ const Wheels: React.FC = () => {
     <>
       <Seo title='Jyväskylän Huoltoykköset - Rengasmyynti ja rengashotelli' description='' name='' type='' />
       <Stack id='wheels' spacing={3}>
-        <Typography variant='h4'>RENGASMYYNTI JA RENGASHOTELLI</Typography>
-        <Typography variant='ui3r'>
+        <Typography variant='h4' color='typography.dark'>
+          RENGASMYYNTI JA RENGASHOTELLI
+        </Typography>
+        <Typography variant='ui3r' color='typography.dark'>
           Kunnon renkaat on halpa henkivakuutus! Meiltä saat järkevän tarjouksen kunnon talvi- ja kesärenkaille. Tule käymään niin
           tarkistamme veloituksetta renkaasi! Me säilytämme rengashotellissamme autosi renkaita sesongin ylitse kuin omiamme.
           Rengashotellitarjouksemme pitää sisällään renkaiden pesun ja allevaihdon.
@@ -33,8 +35,10 @@ const Wheels: React.FC = () => {
                 src='/src/assets/jpg/wheels.jpg'
               />
               <Stack spacing={1}>
-                <Typography variant='p1'>RENGASMYYNTI</Typography>
-                <Typography variant='p2'>
+                <Typography variant='p1' color='typography.dark'>
+                  RENGASMYYNTI
+                </Typography>
+                <Typography variant='p2' color='typography.dark'>
                   Kunnon renkaat on halpa henkivakuutus! Meiltä saat järkevän tarjouksen kunnon talvi- ja kesärenkaille. Tule käymään niin
                   tarkistamme veloituksetta renkaasi!
                 </Typography>
@@ -64,8 +68,10 @@ const Wheels: React.FC = () => {
                 </Link>
               </Box>
               <Stack spacing={1}>
-                <Typography variant='p1'>RENGASHOTELLI</Typography>
-                <Typography variant='p2'>
+                <Typography variant='p1' color='typography.dark'>
+                  RENGASHOTELLI
+                </Typography>
+                <Typography variant='p2' color='typography.dark'>
                   Me säilytämme renkaitasi sesongin ylitse kuin omiamme. Rengashotellitarjouksemme pitää sisällään renkaiden pesun ja
                   allevaihdon.
                 </Typography>

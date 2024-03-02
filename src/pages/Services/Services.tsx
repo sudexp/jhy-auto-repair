@@ -9,7 +9,9 @@ const Services: React.FC = () => {
     <>
       <Seo title='Jyväskylän Huoltoykköset - Palvelut' description='' name='' type='' />
       <Stack id='services' spacing={3}>
-        <Typography variant='h4'>TÄYDEN PALVELUN AUTOHUOLTO KUSTANNUSTEHOKKAASTI</Typography>
+        <Typography variant='h4' color='typography.dark'>
+          TÄYDEN PALVELUN AUTOHUOLTO KUSTANNUSTEHOKKAASTI
+        </Typography>
         <Box
           display='grid'
           gridTemplateColumns='repeat(2, 1fr)'
@@ -35,12 +37,14 @@ const Services: React.FC = () => {
                     {component}
                   </Avatar>
                 </ListItemAvatar>
-                <ListItemText primary={title} />
+                <ListItemText primary={title} sx={{ color: 'typography.dark' }} />
               </ListItem>
             </Box>
           ))}
         </Box>
-        <Typography variant='p1'>… ja kaikki muu mahdollinen autosi hyvinvoinnin tueksi!</Typography>
+        <Typography variant='p1' color='typography.dark'>
+          … ja kaikki muu mahdollinen autosi hyvinvoinnin tueksi!
+        </Typography>
       </Stack>
     </>
   );

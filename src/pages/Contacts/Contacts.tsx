@@ -18,7 +18,9 @@ const Contacts: React.FC = () => {
               alt='Asentaja1'
               src='/src/assets/png/photo1.png'
             />
-            <Typography variant='p2'>Asentaja Andrei</Typography>
+            <Typography variant='p2' color='typography.dark'>
+              Asentaja Andrei
+            </Typography>
           </Stack>
           <Stack spacing={1}>
             <Box
@@ -27,7 +29,9 @@ const Contacts: React.FC = () => {
               alt='Asentaja2'
               src='/src/assets/png/photo2.png'
             />
-            <Typography variant='p2'>Asentaja Aaro</Typography>
+            <Typography variant='p2' color='typography.dark'>
+              Asentaja Aaro
+            </Typography>
           </Stack>
         </Stack>
         <Box id='contacts' sx={{ maxWidth: theme.breakpoints.values.lg, margin: '0 auto' }}>
