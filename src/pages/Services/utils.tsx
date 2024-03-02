@@ -11,6 +11,7 @@ import {
   RustSvg,
   HeaterSvg,
   EmissionSvg,
+  BatterySvg,
 } from 'assets/svg/service-icons';
 
 interface Service {
@@ -73,7 +74,7 @@ export const services: Service[] = [
   {
     id: 10,
     title: 'Henkilöauton ja pakettiauton käynnistimet, akut, laturit',
-    component: <WheelSvg />,
+    component: <BatterySvg />,
   },
   {
     id: 11,
