@@ -15,6 +15,7 @@ import {
   OilChangeSvg,
   EngineSvg,
   CoolingSvg,
+  SuspensionSvg,
 } from 'assets/svg/service-icons';
 
 interface Service {
@@ -97,7 +98,7 @@ export const services: Service[] = [
   {
     id: 14,
     title: 'Ohjaus- ja jousitus työt',
-    component: <WheelSvg />,
+    component: <SuspensionSvg />,
   },
   {
     id: 15,
