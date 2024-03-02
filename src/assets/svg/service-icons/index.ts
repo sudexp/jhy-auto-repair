@@ -13,6 +13,7 @@ import EmissionSvg from './emission.svg?react';
 import BatterySvg from './battery.svg?react';
 import OilChangeSvg from './oil_change.svg?react';
 import EngineSvg from './engine.svg?react';
+import CoolingSvg from './cooling.svg?react';
 
 export {
   WheelSvg,
@@ -28,4 +29,5 @@ export {
   BatterySvg,
   OilChangeSvg,
   EngineSvg,
+  CoolingSvg,
 };
