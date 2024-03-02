@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { WheelSvg, ChangeVehicle, Service, Conditioning } from 'assets/svg/service-icons';
+import { WheelSvg, ChangeVehicleSvg, ServiceSvg, ConditioningSvg, TireBalancingSvg } from 'assets/svg/service-icons';
 
 interface Service {
   id: number;
@@ -17,22 +17,22 @@ export const services: Service[] = [
   {
     id: 1,
     title: 'Sijaisautot huollon tai korjauksen ajaksi',
-    component: <ChangeVehicle />,
+    component: <ChangeVehicleSvg />,
   },
   {
     id: 2,
     title: 'Henkilö- ja pakettiautojen kaikki huollot ja korjaukset',
-    component: <Service />,
+    component: <ServiceSvg />,
   },
   {
     id: 3,
     title: 'Ilmastointi huolto ja korjaus',
-    component: <Conditioning />,
+    component: <ConditioningSvg />,
   },
   {
     id: 4,
     title: 'Renkaiden tasapainotus ja 3D-suuntaus',
-    component: <WheelSvg />,
+    component: <TireBalancingSvg />,
   },
   {
     id: 5,
