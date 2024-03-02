@@ -5,5 +5,6 @@ import ChangeVehicleSvg from './change_vehicle.svg?react';
 import ServiceSvg from './service.svg?react';
 import ConditioningSvg from './conditioning.svg?react';
 import TireBalancingSvg from './tire_balancing.svg?react';
+import DiagnosisSvg from './diagnosis.svg?react';
 
-export { WheelSvg, ChangeVehicleSvg, ServiceSvg, ConditioningSvg, TireBalancingSvg };
+export { WheelSvg, ChangeVehicleSvg, ServiceSvg, ConditioningSvg, TireBalancingSvg, DiagnosisSvg };
