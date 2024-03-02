@@ -9,6 +9,7 @@ import DiagnosisSvg from './diagnosis.svg?react';
 import MaintenanceWarrantySvg from './maintenance_warranty.svg?react';
 import RustSvg from './rust.svg?react';
 import HeaterSvg from './heater.svg?react';
+import EmissionSvg from './emission.svg?react';
 
 export {
   WheelSvg,
@@ -20,4 +21,5 @@ export {
   MaintenanceWarrantySvg,
   RustSvg,
   HeaterSvg,
+  EmissionSvg,
 };

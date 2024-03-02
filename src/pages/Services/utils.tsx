@@ -10,6 +10,7 @@ import {
   MaintenanceWarrantySvg,
   RustSvg,
   HeaterSvg,
+  EmissionSvg,
 } from 'assets/svg/service-icons';
 
 interface Service {
@@ -67,7 +68,7 @@ export const services: Service[] = [
   {
     id: 9,
     title: 'Päästömittaukset ja diagnostiikat',
-    component: <WheelSvg />,
+    component: <EmissionSvg />,
   },
   {
     id: 10,
