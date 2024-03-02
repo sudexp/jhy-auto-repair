@@ -12,6 +12,7 @@ import {
   HeaterSvg,
   EmissionSvg,
   BatterySvg,
+  OilChange,
 } from 'assets/svg/service-icons';
 
 interface Service {
@@ -79,7 +80,7 @@ export const services: Service[] = [
   {
     id: 11,
     title: 'Öljynvaihdot',
-    component: <WheelSvg />,
+    component: <OilChange />,
   },
   {
     id: 12,
