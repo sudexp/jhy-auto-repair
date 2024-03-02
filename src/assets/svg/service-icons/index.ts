@@ -18,6 +18,7 @@ import SuspensionSvg from './suspension.svg?react';
 import BrakesSvg from './brakes.svg?react';
 import FuelSvg from './fuel.svg?react';
 import ExhaustPipeSvg from './exhaust_pipe.svg?react';
+import TransmissionSvg from './transmission.svg?react';
 
 export {
   WheelSvg,
@@ -38,4 +39,5 @@ export {
   BrakesSvg,
   FuelSvg,
   ExhaustPipeSvg,
+  TransmissionSvg,
 };
