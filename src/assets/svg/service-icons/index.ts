@@ -2,5 +2,6 @@
 
 import WheelSvg from './wheel.svg?react';
 import ChangeVehicle from './change_vehicle.svg?react';
+import Service from './service.svg?react';
 
-export { WheelSvg, ChangeVehicle };
+export { WheelSvg, ChangeVehicle, Service };
