@@ -1,4 +1,4 @@
-import { greyColors } from 'theme/colors';
+import { bgColors } from 'theme/colors';
 
 import { getBgColor } from './utils';
 
@@ -8,6 +8,6 @@ describe('Footer getBgColor', () => {
   });
 
   it('should return dark grey color if isRootPath is false', () => {
-    expect(getBgColor(false)).toBe(greyColors.dark);
+    expect(getBgColor(false)).toBe(bgColors.middle);
   });
 });

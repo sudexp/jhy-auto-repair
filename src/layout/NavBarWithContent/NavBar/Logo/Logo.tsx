@@ -2,13 +2,13 @@ import { useMatch } from 'react-router-dom';
 
 import { LogoSvg } from 'assets/svg';
 import Link from 'components/Link';
-import { greyColors, redColors } from 'theme/colors';
+import { bgColors, redColors } from 'theme/colors';
 
 const Logo: React.FC = () => {
   const isRootPath = !!useMatch('/');
 
   if (isRootPath) {
-    return <LogoSvg style={{ display: 'inline-block', fill: greyColors.light }} />;
+    return <LogoSvg style={{ display: 'inline-block', fill: bgColors.light }} />;
   }
 
   return (

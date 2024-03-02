@@ -1,7 +1,7 @@
 import { Box, Link, Stack, Typography } from '@mui/material';
 
 import Seo from 'components/Seo';
-import { commonColors } from 'theme/colors';
+import { typographyColors } from 'theme/colors';
 
 const Wheels: React.FC = () => {
   return (
@@ -58,7 +58,7 @@ const Wheels: React.FC = () => {
                   href='https://www.freepik.com'
                   target='_blank'
                   rel='noopener noreferrer'
-                  sx={{ color: commonColors.white, textDecoration: 'none', fontSize: '0.5rem', ml: 0.5 }}
+                  sx={{ color: typographyColors.light, textDecoration: 'none', fontSize: '0.5rem', ml: 0.5 }}
                 >
                   designed by fxquadro - Freepik.com
                 </Link>

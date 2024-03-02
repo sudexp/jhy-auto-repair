@@ -16,7 +16,7 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
-import { greyColors } from 'theme/colors';
+import { bgColors } from 'theme/colors';
 
 import Logo from './Logo';
 import { getBorderBottom, getColor, getCursor, getDisableRipple, getDrawerTextColor, getTextShadow } from './utils';
@@ -43,7 +43,7 @@ const NavBar: React.FC = () => {
         color='transparent'
         sx={{
           borderBottom: getBorderBottom(isRootPath),
-          borderBottomColor: greyColors.light,
+          borderBottomColor: bgColors.light,
           mb: 3,
         }}
       >

@@ -1,5 +1,5 @@
-import { greyColors } from 'theme/colors';
+import { bgColors } from 'theme/colors';
 
 export const getBgColor = (isRootPath: boolean) => {
-  return isRootPath ? 'transparent' : greyColors.dark;
+  return isRootPath ? 'transparent' : bgColors.middle;
 };

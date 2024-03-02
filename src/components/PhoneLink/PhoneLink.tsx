@@ -1,14 +1,14 @@
 import { Box, Link, Stack, Typography } from '@mui/material';
 import PhoneIcon from '@mui/icons-material/Phone';
 
-import { commonColors } from 'theme/colors';
+import { typographyColors } from 'theme/colors';
 
 interface PhoneLinkProps {
   phoneNumber: string;
   color?: string;
 }
 
-const PhoneLink: React.FC<PhoneLinkProps> = ({ phoneNumber, color = commonColors.white }: PhoneLinkProps) => {
+const PhoneLink: React.FC<PhoneLinkProps> = ({ phoneNumber, color = typographyColors.light }: PhoneLinkProps) => {
   return (
     <Box
       display='flex'

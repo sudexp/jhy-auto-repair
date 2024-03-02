@@ -3,24 +3,22 @@ import '@mui/material/styles/createPalette';
 
 declare module '@mui/material/styles' {
   interface Palette {
-    greyscale: {
-      text: CSS.Properties['color'];
-      light: CSS.Properties['color'];
-      dark: CSS.Properties['color'];
-    };
     tertiary: {
       main: CSS.Properties['color'];
+    };
+    typography: {
+      light: CSS.Properties['color'];
+      dark: CSS.Properties['color'];
     };
   }
 
   interface PaletteOptions {
-    greyscale: {
-      text: CSS.Properties['color'];
-      light: CSS.Properties['color'];
-      dark: CSS.Properties['color'];
-    };
     tertiary: {
       main: CSS.Properties['color'];
+    };
+    typography: {
+      light: CSS.Properties['color'];
+      dark: CSS.Properties['color'];
     };
   }
 
@@ -28,8 +26,7 @@ declare module '@mui/material/styles' {
     primary?: CSS.Properties['color'];
     secondary?: CSS.Properties['color'];
     tertiary?: CSS.Properties['color'];
-    white?: CSS.Properties['color'];
-    black?: CSS.Properties['color'];
+    typography?: CSS.Properties['color'];
     red?: CSS.Properties['color'];
   }
 

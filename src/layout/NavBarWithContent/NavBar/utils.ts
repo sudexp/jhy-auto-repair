@@ -1,7 +1,7 @@
-import { commonColors, greyColors, redColors } from 'theme/colors';
+import { bgColors, redColors, typographyColors } from 'theme/colors';
 
 export const getBorderBottom = (isRootPath: boolean) => {
-  return isRootPath ? 'none' : `1px solid ${greyColors.light}`;
+  return isRootPath ? 'none' : `1px solid ${bgColors.light}`;
 };
 
 export const getTextShadow = (isSelected: boolean) => {
@@ -9,11 +9,11 @@ export const getTextShadow = (isSelected: boolean) => {
 };
 
 export const getColor = (isRootPath: boolean) => {
-  return isRootPath ? commonColors.white : redColors.dark;
+  return isRootPath ? bgColors.light : redColors.dark;
 };
 
 export const getDrawerTextColor = (isRootPath: boolean) => {
-  return isRootPath ? greyColors.text : redColors.dark;
+  return isRootPath ? typographyColors.light : redColors.dark;
 };
 
 export const getCursor = (isSelected: boolean) => {

@@ -1,6 +1,6 @@
-const commonColors = {
-  white: '#ffffff',
-  black: '#000000',
+const typographyColors = {
+  light: '#edf2f4',
+  dark: '#141414',
 };
 
 const redColors = {
@@ -8,14 +8,10 @@ const redColors = {
   dark: '#d90429',
 };
 
-const greyColors = {
-  text: '#141414',
+const bgColors = {
   light: '#edf2f4',
-  dark: '#8d99ae',
-};
-
-const blueColors = {
+  middle: '#8d99ae',
   dark: '#2b2d42',
 };
 
-export { commonColors, redColors, greyColors, blueColors };
+export { typographyColors, redColors, bgColors };

@@ -1,4 +1,4 @@
-import { commonColors, greyColors, redColors } from 'theme/colors';
+import { bgColors, redColors, typographyColors } from 'theme/colors';
 
 import { getBorderBottom, getColor, getCursor, getDisableRipple, getDrawerTextColor, getTextShadow } from './utils';
 
@@ -10,7 +10,7 @@ describe('Navbar getBorderBottom', () => {
   });
 
   it('returns the correct border string if isRootPath is false', () => {
-    const expectedResult = `1px solid ${greyColors.light}`;
+    const expectedResult = `1px solid ${bgColors.light}`;
     const result = getBorderBottom(false);
 
     expect(result).toBe(expectedResult);
@@ -33,10 +33,10 @@ describe('Navbar getTextShadow', () => {
 });
 
 describe('Navbar getColor', () => {
-  it('returns commonColors.white if isRootPath is true', () => {
+  it('returns bgcolors.light if isRootPath is true', () => {
     const result = getColor(true);
 
-    expect(result).toBe(commonColors.white);
+    expect(result).toBe(bgColors.light);
   });
 
   it('returns redColors.dark if isRootPath is false', () => {
@@ -47,10 +47,10 @@ describe('Navbar getColor', () => {
 });
 
 describe('getDrawerTextColor', () => {
-  it('returns greyColors.text if isRootPath is true', () => {
+  it('returns typographyColors.light if isRootPath is true', () => {
     const result = getDrawerTextColor(true);
 
-    expect(result).toBe(greyColors.text);
+    expect(result).toBe(typographyColors.light);
   });
 
   it('returns redColors.dark if isRootPath is false', () => {

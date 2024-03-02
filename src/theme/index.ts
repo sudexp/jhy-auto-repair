@@ -1,7 +1,7 @@
 /* eslint-disable max-lines */
 import { createTheme } from '@mui/material/styles';
 
-import { commonColors, redColors, greyColors, blueColors } from './colors';
+import { bgColors, redColors, typographyColors } from './colors';
 
 const INTER_SEMIBOLD = 'Inter Semibold';
 
@@ -27,11 +27,7 @@ const theme = createTheme({
       disabled: 'none',
     },
     background: {
-      default: greyColors.light,
-    },
-    common: {
-      black: commonColors.black,
-      white: commonColors.white,
+      default: bgColors.light,
     },
     primary: {
       main: redColors.dark,
@@ -40,12 +36,11 @@ const theme = createTheme({
       main: redColors.light,
     },
     tertiary: {
-      main: blueColors.dark,
+      main: bgColors.dark,
     },
-    greyscale: {
-      text: greyColors.text,
-      light: greyColors.light,
-      dark: greyColors.dark,
+    typography: {
+      light: typographyColors.light,
+      dark: typographyColors.dark,
     },
   },
 });
