@@ -38,12 +38,7 @@ const Wheels: React.FC = () => {
         >
           <Box gridColumn='span 1'>
             <Stack spacing={1}>
-              <Box
-                component='img'
-                sx={{ display: 'block', maxHeight: '100%', maxWidth: '100%' }}
-                alt='Rengasmyynti'
-                src='/src/assets/jpg/wheels.jpg'
-              />
+              <Box component='img' sx={{ display: 'block', maxHeight: '100%', maxWidth: '100%' }} alt='Rengasmyynti' src='wheels.jpg' />
               <Stack spacing={1}>
                 <Typography variant='p2'>RENGASMYYNTI</Typography>
                 <Typography variant='p3'>
@@ -59,7 +54,7 @@ const Wheels: React.FC = () => {
                 component='img'
                 sx={{ display: 'block', maxHeight: '100%', maxWidth: '100%', position: 'relative' }}
                 alt='Rengashotelli'
-                src='/src/assets/jpg/hotel.jpg'
+                src='hotel.jpg'
               />
               <Box
                 sx={{
