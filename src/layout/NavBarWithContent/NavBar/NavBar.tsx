@@ -97,7 +97,7 @@ const NavBar: React.FC = () => {
                     sx={{
                       color: getColor(isRootPath),
                       cursor: getCursor(isSelected),
-                      textShadow: getTextShadow(isSelected),
+                      textShadow: getTextShadow(isSelected, isOpen),
                     }}
                   >
                     {name}
@@ -144,7 +144,7 @@ const NavBar: React.FC = () => {
                         sx={{
                           color: 'typography.dark',
                           cursor: getCursor(isSelected),
-                          textShadow: getTextShadow(isSelected),
+                          textShadow: getTextShadow(isSelected, isOpen),
                         }}
                       />
                     </ListItemButton>

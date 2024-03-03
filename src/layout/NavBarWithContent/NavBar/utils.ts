@@ -4,8 +4,16 @@ export const getBorderBottom = (isRootPath: boolean) => {
   return isRootPath ? 'none' : `1px solid ${bgColors.light}`;
 };
 
-export const getTextShadow = (isSelected: boolean) => {
-  return isSelected ? `1px 0 0 ${typographyColors.dark}` : 'none';
+export const getTextShadow = (isSelected: boolean, isOpen: boolean) => {
+  if (isSelected && isOpen) {
+    return `1px 0 0 ${typographyColors.dark}`;
+  }
+
+  if (isSelected && !isOpen) {
+    return `1px 0 0 ${redColors.dark}`;
+  }
+
+  return 'none';
 };
 
 export const getColor = (isRootPath: boolean) => {
