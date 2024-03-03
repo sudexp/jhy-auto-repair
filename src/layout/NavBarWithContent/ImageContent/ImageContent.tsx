@@ -16,7 +16,7 @@ const ImageContent: React.FC = () => {
         hintatakuulla tottakai.
       </Typography>
       <Typography variant='ui2r' color='typography.light'>
-        Palvelemme arkisin ma–pe 8-16.30 osoiteessa 40320, Jyväskylä, Kuormaajantie 6.
+        Palvelemme arkisin ma–pe 8-16.30 osoiteessa Kuormaajantie 6, 40320, Jyväskylä
       </Typography>
       <Stack direction='row' spacing={1}>
         <Typography variant='ui3r' color='typography.light'>
