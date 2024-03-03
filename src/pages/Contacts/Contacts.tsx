@@ -74,7 +74,7 @@ const Contacts: React.FC = () => {
             </Typography>
           </Stack>
         </Stack>
-        <Box id='contacts' sx={{ maxWidth: theme.breakpoints.values.lg, margin: '0 auto' }}>
+        <Box id='contacts' sx={{ maxWidth: theme.breakpoints.values.lg /* , margin: '0 auto' */ }}>
           <LeafletMap />
         </Box>
         <Typography variant='p3'>
