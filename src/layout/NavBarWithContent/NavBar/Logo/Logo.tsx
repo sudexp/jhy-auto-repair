@@ -14,7 +14,11 @@ const Logo: React.FC<LogoProps> = ({ isOpen }: LogoProps) => {
   const isRootPath = !!useMatch('/');
 
   if (isOpen) {
-    return <LogoSvg style={{ display, fill: redColors.dark }} />;
+    return (
+      <Link to='/'>
+        <LogoSvg style={{ display, fill: redColors.dark }} />
+      </Link>
+    );
   }
 
   if (isRootPath) {
