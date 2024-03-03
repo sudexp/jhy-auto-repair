@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
   const theme = useTheme();
 
   return (
-    <Box sx={{ display: 'flex', flexShrink: 0 }}>
+    <Box sx={{ display: 'flex', flexShrink: 0, mt: 6 }}>
       <LayoutContainer sx={{ py: { xs: 2, md: 4 }, bgcolor: getBgColor(isRootPath) }}>
         <Box
           display='grid'
