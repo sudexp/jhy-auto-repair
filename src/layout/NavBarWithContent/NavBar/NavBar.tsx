@@ -13,13 +13,14 @@ import {
   ListItemButton,
   ListItemText,
   Toolbar,
+  Typography,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
 import { bgColors } from 'theme/colors';
 
 import Logo from './Logo';
-import { getBorderBottom, getColor, getCursor, getDisableRipple, getDrawerTextColor, getTextShadow } from './utils';
+import { getBorderBottom, getColor, getCursor, getDisableRipple, getTextShadow } from './utils';
 
 const navItems = [
   { name: 'PALVELUT', path: '/services' },
@@ -90,18 +91,17 @@ const NavBar: React.FC = () => {
               const isSelected = path === pathname;
 
               return (
-                <Button
-                  key={name}
-                  component={Link}
-                  to={path}
-                  disableRipple={getDisableRipple(isSelected)}
-                  sx={{
-                    color: getColor(isRootPath),
-                    cursor: getCursor(isSelected),
-                    textShadow: getTextShadow(isSelected),
-                  }}
-                >
-                  {name}
+                <Button key={name} component={Link} to={path} disableRipple={getDisableRipple(isSelected)}>
+                  <Typography
+                    variant='ui3r'
+                    sx={{
+                      color: getColor(isRootPath),
+                      cursor: getCursor(isSelected),
+                      textShadow: getTextShadow(isSelected),
+                    }}
+                  >
+                    {name}
+                  </Typography>
                 </Button>
               );
             })}
@@ -128,7 +128,7 @@ const NavBar: React.FC = () => {
           }}
         >
           <Box onClick={handleDrawerToggle}>
-            <Box sx={{ ml: 2 }}>
+            <Box sx={{ m: 2 }}>
               <Logo />
             </Box>
             <Divider />
@@ -142,7 +142,7 @@ const NavBar: React.FC = () => {
                       <ListItemText
                         primary={name}
                         sx={{
-                          color: getDrawerTextColor(isRootPath),
+                          color: 'typography.dark',
                           cursor: getCursor(isSelected),
                           textShadow: getTextShadow(isSelected),
                         }}

@@ -1,6 +1,6 @@
-import { bgColors, redColors, typographyColors } from 'theme/colors';
+import { bgColors, redColors } from 'theme/colors';
 
-import { getBorderBottom, getColor, getCursor, getDisableRipple, getDrawerTextColor, getTextShadow } from './utils';
+import { getBorderBottom, getColor, getCursor, getDisableRipple, getTextShadow } from './utils';
 
 describe('Navbar getBorderBottom', () => {
   it('returns "none" if isRootPath is true', () => {
@@ -41,20 +41,6 @@ describe('Navbar getColor', () => {
 
   it('returns redColors.dark if isRootPath is false', () => {
     const result = getColor(false);
-
-    expect(result).toBe(redColors.dark);
-  });
-});
-
-describe('getDrawerTextColor', () => {
-  it('returns typographyColors.light if isRootPath is true', () => {
-    const result = getDrawerTextColor(true);
-
-    expect(result).toBe(typographyColors.light);
-  });
-
-  it('returns redColors.dark if isRootPath is false', () => {
-    const result = getDrawerTextColor(false);
 
     expect(result).toBe(redColors.dark);
   });

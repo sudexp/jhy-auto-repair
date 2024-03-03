@@ -5,15 +5,11 @@ export const getBorderBottom = (isRootPath: boolean) => {
 };
 
 export const getTextShadow = (isSelected: boolean) => {
-  return isSelected ? `1px 0 0 ${redColors.dark}` : 'none';
+  return isSelected ? `1px 0 0 ${typographyColors.dark}` : 'none';
 };
 
 export const getColor = (isRootPath: boolean) => {
   return isRootPath ? bgColors.light : redColors.dark;
-};
-
-export const getDrawerTextColor = (isRootPath: boolean) => {
-  return isRootPath ? typographyColors.light : redColors.dark;
 };
 
 export const getCursor = (isSelected: boolean) => {
