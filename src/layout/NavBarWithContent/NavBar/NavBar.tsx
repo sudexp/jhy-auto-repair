@@ -93,7 +93,7 @@ const NavBar: React.FC = () => {
               return (
                 <Button key={name} component={Link} to={path} disableRipple={getDisableRipple(isSelected)}>
                   <Typography
-                    variant='ui3r'
+                    variant='p3'
                     sx={{
                       color: getColor(isRootPath),
                       cursor: getCursor(isSelected),

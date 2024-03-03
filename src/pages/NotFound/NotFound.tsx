@@ -4,7 +4,7 @@ import { Box, Typography, Link } from '@mui/material';
 const NotFound: React.FC = () => {
   return (
     <Box id='404' sx={{ m: 2 }}>
-      <Typography>Not Found Page</Typography>
+      <Typography color='typography.dark'>Not Found Page</Typography>
       <Link component={RouterLink} to='/'>
         Back To Root
       </Link>

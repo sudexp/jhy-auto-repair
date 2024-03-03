@@ -24,7 +24,7 @@ const PhoneLink: React.FC<PhoneLinkProps> = ({ phoneNumber, color = typographyCo
       <Link href={`tel:${phoneNumber}`} underline='hover' sx={{ color }}>
         <Stack direction='row' spacing={1} sx={{ alignItems: 'center' }}>
           <PhoneIcon fontSize='medium' />
-          <Typography variant='ui3r'>{phoneNumber}</Typography>
+          <Typography variant='p2b'>{phoneNumber}</Typography>
         </Stack>
       </Link>
     </Box>

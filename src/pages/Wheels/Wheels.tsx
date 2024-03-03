@@ -14,15 +14,18 @@ const Wheels: React.FC = () => {
         name='Jyväskylän Huoltoykköset - Rengasmyynti ja rengashotelli'
         type='website'
       />
-      <Stack id='wheels' spacing={3}>
-        <Typography variant='h4' color='typography.dark'>
-          RENGASMYYNTI JA RENGASHOTELLI
-        </Typography>
-        <Typography variant='ui3r' color='typography.dark'>
-          Kunnon renkaat on halpa henkivakuutus! Meiltä saat järkevän tarjouksen kunnon talvi- ja kesärenkaille. Tule käymään niin
-          tarkistamme veloituksetta renkaasi! Me säilytämme rengashotellissamme autosi renkaita sesongin ylitse kuin omiamme.
-          Rengashotellitarjouksemme pitää sisällään renkaiden pesun ja allevaihdon.
-        </Typography>
+      <Stack id='wheels' spacing={3} sx={{ '&': { color: 'typography.dark' } }}>
+        <Typography variant='h2'>RENGASMYYNTI JA RENGASHOTELLI</Typography>
+        <Stack spacing={2}>
+          <Typography variant='p3' sx={{ fontWeight: 'bold' }}>
+            Kunnon renkaat on halpa henkivakuutus!
+          </Typography>
+          <Typography variant='p3'>
+            Meiltä saat järkevän tarjouksen kunnon talvi- ja kesärenkaille. Tule käymään niin tarkistamme veloituksetta renkaasi! Me
+            säilytämme rengashotellissamme autosi renkaita sesongin ylitse kuin omiamme. Rengashotellitarjouksemme pitää sisällään renkaiden
+            pesun ja allevaihdon.
+          </Typography>
+        </Stack>
         <Box
           display='grid'
           gridTemplateColumns='repeat(2, 1fr)'
@@ -42,10 +45,8 @@ const Wheels: React.FC = () => {
                 src='/src/assets/jpg/wheels.jpg'
               />
               <Stack spacing={1}>
-                <Typography variant='p1' color='typography.dark'>
-                  RENGASMYYNTI
-                </Typography>
-                <Typography variant='p2' color='typography.dark'>
+                <Typography variant='p2'>RENGASMYYNTI</Typography>
+                <Typography variant='p3'>
                   Kunnon renkaat on halpa henkivakuutus! Meiltä saat järkevän tarjouksen kunnon talvi- ja kesärenkaille. Tule käymään niin
                   tarkistamme veloituksetta renkaasi!
                 </Typography>
@@ -75,10 +76,8 @@ const Wheels: React.FC = () => {
                 </Link>
               </Box>
               <Stack spacing={1}>
-                <Typography variant='p1' color='typography.dark'>
-                  RENGASHOTELLI
-                </Typography>
-                <Typography variant='p2' color='typography.dark'>
+                <Typography variant='p2'>RENGASHOTELLI</Typography>
+                <Typography variant='p3'>
                   Me säilytämme renkaitasi sesongin ylitse kuin omiamme. Rengashotellitarjouksemme pitää sisällään renkaiden pesun ja
                   allevaihdon.
                 </Typography>

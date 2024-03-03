@@ -22,17 +22,19 @@ const Services: React.FC = () => {
           '&': { color: 'typography.dark' },
         }}
       >
-        <Stack spacing={2}>
-          <Typography variant='h4' color='typography.dark'>
-            TÄYDEN PALVELUN AUTOHUOLTO KUSTANNUSTEHOKKAASTI
-          </Typography>
-          <Typography color='typography.dark'>
-            Autonhuollonamme tarjoamme laajan valikoiman palveluita, jotka auttavat ylläpitämään autosi parhaassa kunnossa. Tavoitteemme on
-            tarjota teille luotettavan ja tehokkaan palvelun, joka sisältää kaiken tarvittavan huollon ja korjauksen, yksinkertaisesta
-            teknisestä huollosta raskaisiin korjaustoimenpiteisiin. Toteamme on keskittyä komfortin ja helpottamisen tekemiseen, tarjoamalla
-            korkealaatuisen palvelun ja yksilöllisen lähestymistavan jokaiseen asiakkaaseen.
-          </Typography>
-          <Typography>Palvelumme sisältää:</Typography>
+        <Stack spacing={3}>
+          <Typography variant='h2'>TÄYDEN PALVELUN AUTOHUOLTO KUSTANNUSTEHOKKAASTI</Typography>
+          <Stack spacing={2}>
+            <Typography variant='p3'>
+              Autonhuollonamme tarjoamme laajan valikoiman palveluita, jotka auttavat ylläpitämään autosi parhaassa kunnossa. Tavoitteemme
+              on tarjota teille luotettavan ja tehokkaan palvelun, joka sisältää kaiken tarvittavan huollon ja korjauksen, yksinkertaisesta
+              teknisestä huollosta raskaisiin korjaustoimenpiteisiin. Toteamme on keskittyä komfortin ja helpottamisen tekemiseen,
+              tarjoamalla korkealaatuisen palvelun ja yksilöllisen lähestymistavan jokaiseen asiakkaaseen.
+            </Typography>
+            <Typography variant='p3' sx={{ fontWeight: 'bold' }}>
+              Palvelumme sisältää:
+            </Typography>
+          </Stack>
         </Stack>
         <Box
           display='grid'
@@ -59,12 +61,12 @@ const Services: React.FC = () => {
                     {component}
                   </Avatar>
                 </ListItemAvatar>
-                <ListItemText primary={title} sx={{ color: 'typography.dark' }} />
+                <ListItemText primary={title} primaryTypographyProps={{ variant: 'p3' }} sx={{ color: 'typography.dark' }} />
               </ListItem>
             </Box>
           ))}
         </Box>
-        <Typography>… ja kaikki muu mahdollinen autosi hyvinvoinnin tueksi!</Typography>
+        <Typography variant='p3'>… ja kaikki muu mahdollinen autosi hyvinvoinnin tueksi!</Typography>
       </Stack>
     </>
   );

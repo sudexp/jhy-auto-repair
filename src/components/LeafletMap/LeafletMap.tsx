@@ -18,8 +18,8 @@ const LeafletMap: React.FC = () => {
         <Marker position={[62.27532697658108, 25.783267621046065]}>
           <Popup>
             <Stack spacing={0.25} sx={{ justifyContent: 'center', alignItems: 'center' }}>
-              <Typography variant='ui4r'>Jyväskylän</Typography>
-              <Typography variant='ui4r'>Huoltoykköset</Typography>
+              <Typography variant='p3'>Jyväskylän</Typography>
+              <Typography variant='p3'>Huoltoykköset</Typography>
             </Stack>
           </Popup>
         </Marker>
