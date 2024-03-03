@@ -10,10 +10,25 @@ const Services: React.FC = () => {
   return (
     <>
       <Seo title='Jyväskylän Huoltoykköset - Palvelut' description='' name='' type='' />
-      <Stack id='services' spacing={3}>
-        <Typography variant='h4' color='typography.dark'>
-          TÄYDEN PALVELUN AUTOHUOLTO KUSTANNUSTEHOKKAASTI
-        </Typography>
+      <Stack
+        id='services'
+        spacing={3}
+        sx={{
+          '&': { color: 'typography.dark' },
+        }}
+      >
+        <Stack spacing={2}>
+          <Typography variant='h4' color='typography.dark'>
+            TÄYDEN PALVELUN AUTOHUOLTO KUSTANNUSTEHOKKAASTI
+          </Typography>
+          <Typography color='typography.dark'>
+            Autonhuollonamme tarjoamme laajan valikoiman palveluita, jotka auttavat ylläpitämään autosi parhaassa kunnossa. Tavoitteemme on
+            tarjota teille luotettavan ja tehokkaan palvelun, joka sisältää kaiken tarvittavan huollon ja korjauksen, yksinkertaisesta
+            teknisestä huollosta raskaisiin korjaustoimenpiteisiin. Toteamme on keskittyä komfortin ja helpottamisen tekemiseen, tarjoamalla
+            korkealaatuisen palvelun ja yksilöllisen lähestymistavan jokaiseen asiakkaaseen.
+          </Typography>
+          <Typography>Palvelumme sisältää:</Typography>
+        </Stack>
         <Box
           display='grid'
           gridTemplateColumns='repeat(2, 1fr)'
@@ -44,9 +59,7 @@ const Services: React.FC = () => {
             </Box>
           ))}
         </Box>
-        <Typography variant='p1' color='typography.dark'>
-          … ja kaikki muu mahdollinen autosi hyvinvoinnin tueksi!
-        </Typography>
+        <Typography>… ja kaikki muu mahdollinen autosi hyvinvoinnin tueksi!</Typography>
       </Stack>
     </>
   );
