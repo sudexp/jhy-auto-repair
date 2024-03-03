@@ -45,7 +45,7 @@ const Contacts: React.FC = () => {
               <Stack spacing={1} sx={{ alignItems: 'center' }}>
                 <Avatar
                   alt='Asentaja1'
-                  src='/public/assets/png/photo1.png'
+                  src='photo1.png'
                   sx={{
                     width: '150px',
                     height: '150px',
@@ -56,7 +56,7 @@ const Contacts: React.FC = () => {
               <Stack spacing={1} sx={{ alignItems: 'center' }}>
                 <Avatar
                   alt='Asentaja1'
-                  src='/public/assets/png/photo2.png'
+                  src='photo2.png'
                   sx={{
                     width: '150px',
                     height: '150px',
