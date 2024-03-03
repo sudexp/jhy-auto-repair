@@ -1,4 +1,4 @@
-import { useMatch } from 'react-router-dom';
+import { useMatch, Link as RouterLink } from 'react-router-dom';
 import { Box, Link, Stack, Typography, useTheme } from '@mui/material';
 
 import LayoutContainer from 'components/LayoutContainer';
@@ -36,7 +36,9 @@ const Footer: React.FC = () => {
           >
             <Stack direction='row' spacing={1}>
               <Typography>Osoite:</Typography>
-              <Typography>Kuormaajantie 6, 40320, Jyväskylä</Typography>
+              <Typography sx={{ '& a': { color: 'typography.light', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } } }}>
+                <RouterLink to='/contacts'>Kuormaajantie 6, 40320, Jyväskylä</RouterLink>
+              </Typography>
             </Stack>
             <Stack direction='row' spacing={1}>
               <Typography>Puhelinnumero:</Typography>
