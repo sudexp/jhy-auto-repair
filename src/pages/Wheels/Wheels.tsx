@@ -23,7 +23,7 @@ const Wheels: React.FC = () => {
           gridTemplateColumns='repeat(2, 1fr)'
           gap={3}
           sx={{
-            [`@media (max-width: ${theme.breakpoints.values.md}px)`]: {
+            [`@media (max-width: ${theme.breakpoints.values.sm}px)`]: {
               gridTemplateColumns: 'repeat(1,  1fr)',
             },
           }}
