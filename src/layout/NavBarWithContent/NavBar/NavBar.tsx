@@ -31,8 +31,8 @@ const NavBar: React.FC = () => {
   const isRootPath = !!useMatch('/');
   const { pathname } = useLocation();
 
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const handleDrawerToggle = () => setMobileOpen((prevState) => !prevState);
+  const [isOpen, setIsOpen] = useState(false);
+  const handleDrawerToggle = () => setIsOpen((prevState) => !prevState);
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -111,7 +111,7 @@ const NavBar: React.FC = () => {
       <nav>
         <Drawer
           variant='temporary'
-          open={mobileOpen}
+          open={isOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
             keepMounted: true, // better open performance on mobile.
@@ -129,7 +129,7 @@ const NavBar: React.FC = () => {
         >
           <Box onClick={handleDrawerToggle}>
             <Box sx={{ m: 2 }}>
-              <Logo />
+              <Logo isOpen={isOpen} />
             </Box>
             <Divider />
             <List>

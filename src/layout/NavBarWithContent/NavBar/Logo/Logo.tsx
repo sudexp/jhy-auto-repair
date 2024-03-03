@@ -4,16 +4,26 @@ import { LogoSvg } from 'assets/svg';
 import Link from 'components/Link';
 import { bgColors, redColors } from 'theme/colors';
 
-const Logo: React.FC = () => {
+interface LogoProps {
+  isOpen?: boolean;
+}
+
+const display = 'inline-block';
+
+const Logo: React.FC<LogoProps> = ({ isOpen }: LogoProps) => {
   const isRootPath = !!useMatch('/');
 
+  if (isOpen) {
+    return <LogoSvg style={{ display, fill: redColors.dark }} />;
+  }
+
   if (isRootPath) {
-    return <LogoSvg style={{ display: 'inline-block', fill: bgColors.light }} />;
+    return <LogoSvg style={{ display, fill: bgColors.light }} />;
   }
 
   return (
     <Link to='/'>
-      <LogoSvg style={{ display: 'inline-block', fill: redColors.dark }} />
+      <LogoSvg style={{ display, fill: redColors.dark }} />
     </Link>
   );
 };
