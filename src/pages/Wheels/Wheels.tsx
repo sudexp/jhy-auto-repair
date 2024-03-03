@@ -1,9 +1,11 @@
-import { Box, Link, Stack, Typography } from '@mui/material';
+import { Box, Link, Stack, Typography, useTheme } from '@mui/material';
 
 import Seo from 'components/Seo';
 import { typographyColors } from 'theme/colors';
 
 const Wheels: React.FC = () => {
+  const theme = useTheme();
+
   return (
     <>
       <Seo title='Jyväskylän Huoltoykköset - Rengasmyynti ja rengashotelli' description='' name='' type='' />
@@ -21,7 +23,7 @@ const Wheels: React.FC = () => {
           gridTemplateColumns='repeat(2, 1fr)'
           gap={3}
           sx={{
-            '@media (max-width: 600px)': {
+            [`@media (max-width: ${theme.breakpoints.values.md}px)`]: {
               gridTemplateColumns: 'repeat(1,  1fr)',
             },
           }}

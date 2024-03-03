@@ -1,10 +1,12 @@
-import { Avatar, Box, ListItem, ListItemAvatar, ListItemText, Stack, Typography } from '@mui/material';
+import { Avatar, Box, ListItem, ListItemAvatar, ListItemText, Stack, Typography, useTheme } from '@mui/material';
 
 import Seo from 'components/Seo';
 
 import { services } from './utils';
 
 const Services: React.FC = () => {
+  const theme = useTheme();
+
   return (
     <>
       <Seo title='Jyväskylän Huoltoykköset - Palvelut' description='' name='' type='' />
@@ -17,7 +19,7 @@ const Services: React.FC = () => {
           gridTemplateColumns='repeat(2, 1fr)'
           gap={3}
           sx={{
-            '@media (max-width: 600px)': {
+            [`@media (max-width: ${theme.breakpoints.values.md}px)`]: {
               gridTemplateColumns: 'repeat(1, 1fr)',
             },
           }}
