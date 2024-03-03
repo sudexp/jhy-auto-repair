@@ -47,7 +47,7 @@ theme.typography.h1 = {
   fontSize: 64,
   fontWeight: 400,
   [theme.breakpoints.down('md')]: {
-    fontSize: 48,
+    fontSize: 36,
   },
 };
 
