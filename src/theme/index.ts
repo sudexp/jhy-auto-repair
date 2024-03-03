@@ -46,16 +46,20 @@ const theme = createTheme({
 theme.typography.h1 = {
   fontSize: 64,
   fontWeight: 400,
+  lineHeight: '70px',
   [theme.breakpoints.down('md')]: {
     fontSize: 36,
+    lineHeight: '42px',
   },
 };
 
 theme.typography.h2 = {
   fontSize: 32,
   fontWeight: 400,
+  lineHeight: '38px',
   [theme.breakpoints.down('md')]: {
     fontSize: 24,
+    lineHeight: '30px',
   },
 };
 
