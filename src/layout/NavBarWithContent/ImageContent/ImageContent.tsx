@@ -1,8 +1,13 @@
-import { Stack, Typography } from '@mui/material';
+import { Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
 
 import PhoneLink from 'components/PhoneLink';
 
+import { getAlignItems, getDirection } from './utils';
+
 const ImageContent: React.FC = () => {
+  const theme = useTheme();
+  const isSmDown = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
     <Stack
       spacing={4}
@@ -20,13 +25,13 @@ const ImageContent: React.FC = () => {
         tarjota ne hinta-arvoparissa.
       </Typography>
       <Stack direction='row' spacing={1}>
-        <Typography variant='p2'>Olemme avoimia arkisin maanantaita ma–pe klo 8–16.30 osoitteessa</Typography>
-        <Typography variant='p2b'>Kuormaajantie 6, 40320, Jyväskylä.</Typography>
+        <Typography variant='p2'>
+          Olemme avoimia arkisin maanantaita ma–pe klo 8–16.30 osoitteessa <b>Kuormaajantie 6, 40320, Jyväskylä</b>.
+        </Typography>
       </Stack>
-      <Stack direction='row' spacing={1} sx={{ alignItems: 'center' }}>
-        <Typography variant='p2'>Ota yhteyttä meille puhelimitse</Typography>
+      <Stack direction={getDirection(isSmDown)} spacing={1} sx={{ alignItems: getAlignItems(isSmDown) }}>
+        <Typography variant='p2'>Ota yhteyttä meille puhelimitse tai varaa aikaa: </Typography>
         <PhoneLink phoneNumber='0452393591' />
-        <Typography variant='p2'>tai varaa aikaa.</Typography>
       </Stack>
     </Stack>
   );
