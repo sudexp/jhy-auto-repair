@@ -9,7 +9,12 @@ const Services: React.FC = () => {
 
   return (
     <>
-      <Seo title='Jyväskylän Huoltoykköset - Palvelut' description='' name='' type='' />
+      <Seo
+        title='Jyväskylän Huoltoykköset - Palvelut'
+        description='Korjaamo Jyväskylä, autohuolto Jyväskylä, autopalvelu Jyväskylä'
+        name='Jyväskylän Huoltoykköset - Palvelut'
+        type='website'
+      />
       <Stack
         id='services'
         spacing={3}

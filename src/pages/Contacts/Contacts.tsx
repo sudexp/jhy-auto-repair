@@ -8,7 +8,12 @@ const Contacts: React.FC = () => {
 
   return (
     <>
-      <Seo title='Jyväskylän Huoltoykköset - Yhteystiedot' description='' name='' type='' />
+      <Seo
+        title='Jyväskylän Huoltoykköset - Yhteystiedot'
+        description='Korjaamo Jyväskylä, autohuolto Jyväskylä, Seppälänkangas Jyväskylä autokorjaamo yhteystiedot'
+        name='Jyväskylän Huoltoykköset - Yhteystiedot'
+        type='website'
+      />
       <Box sx={{ '&': { color: 'typography.dark' } }}>
         <Stack spacing={2}>
           <Typography variant='h4'>YHTEYSTIEDOT: Kokemus ja ammattitaito jokaisessa yksityiskohdassa</Typography>

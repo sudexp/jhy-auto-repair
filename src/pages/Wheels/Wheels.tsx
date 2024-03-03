@@ -8,7 +8,12 @@ const Wheels: React.FC = () => {
 
   return (
     <>
-      <Seo title='Jyväskylän Huoltoykköset - Rengasmyynti ja rengashotelli' description='' name='' type='' />
+      <Seo
+        title='Jyväskylän Huoltoykköset - Rengasmyynti ja rengashotelli'
+        description='Korjaamo Jyväskylä, autohuolto Jyväskylä, Rengasmyynti ja rengashotelli Jyväskylä'
+        name='Jyväskylän Huoltoykköset - Rengasmyynti ja rengashotelli'
+        type='website'
+      />
       <Stack id='wheels' spacing={3}>
         <Typography variant='h4' color='typography.dark'>
           RENGASMYYNTI JA RENGASHOTELLI
