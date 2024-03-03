@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
               </Typography>
             </Stack>
             <Stack direction='row' spacing={1}>
-              <Typography>Y-tunnus</Typography>
+              <Typography>Y-tunnus:</Typography>
               <Typography>3422467-8</Typography>
             </Stack>
           </Box>
