@@ -36,7 +36,7 @@ const Contacts: React.FC = () => {
               <Link href='tel:0452393591' underline='hover' color='typography.dark'>
                 0452393591
               </Link>{' '}
-              tai varaa aikaa.
+              ja varaa aikaa.
             </Typography>
             <Typography variant='p3' sx={{ fontWeight: 'bold' }}>
               Meidän tiimimme:
@@ -78,7 +78,8 @@ const Contacts: React.FC = () => {
           <LeafletMap />
         </Box>
         <Typography variant='p3'>
-          Odottamme sinua maisterimme Seppäänkangas-alueella ja tarjoamme sinulle meidän autonhuollon palveluita.
+          Odottamme sinua <b>Jyväskylän Huoltoykköset</b> korjaamossa Seppäänkangas-alueella ja tarjoamme sinulle meidän autonhuollon
+          palveluita.
         </Typography>
       </Box>
     </>
