@@ -14,7 +14,13 @@ const Contacts: React.FC = () => {
         name='Jyväskylän Huoltoykköset - Yhteystiedot'
         type='website'
       />
-      <Box sx={{ '&': { color: 'typography.dark' } }}>
+      <Box
+        sx={{
+          '&': {
+            color: 'typography.dark',
+          },
+        }}
+      >
         <Stack spacing={3}>
           <Typography variant='h2'>YHTEYSTIEDOT</Typography>
           <Stack spacing={2}>
@@ -22,17 +28,15 @@ const Contacts: React.FC = () => {
               Kokemus ja ammattitaito jokaisessa yksityiskohdassa!
             </Typography>
             <Typography variant='p3'>
-              On iloa esittää teille meidän kokeneen ja ammattitaitavasti koulutetun henkilöstön. Meidän tavoitteemme on tarjota teille
-              korkealaatuisen autonhuollon palveluita, jotka perustuvat meidän yli kymmenen vuoden kokemuksesta ja ammattitaitoon.
+              Ylpeydellä esittelemme teille meidän kokeneen ja ammattitaitoisen henkilöstömme. Tavoitteemme on tarjota teille
+              korkealaatuisen autonhuollon palveluita, jotka perustuvat yli kymmenen vuoden kokemukseen ja ammattitaitoon.
             </Typography>
             <Typography variant='p3'>
-              Meidän maisterimme erottuu korkealta koulutukselta ja ammattitaitolta, mikä mahdollistaa meille tarjota teille
-              erityislaatuisen palvelun. Meidän työskentelyssä on aina huomiota herättävän tarkka ja huolellinen lähestymistapa, joka takaa
-              teille parhaan mahdollisen tuloksen.
+              Huoltomme erottautuu korkealla koulutuksella ja ammattitaitolla, minkä avulla voimme tarjota teille aivan erityislaatuista
+              palvelua. Työskentelymme on aina erityisen tarkkaa ja huolellista, mikä takaa teille parhaan mahdollisen lopputuloksen.
             </Typography>
             <Typography variant='p3'>
-              Olemme avoimia arkisin maanantaita pe klo 8–16.30 osoitteessa Kuormaajantie 6, 40320, Jyväskylä. Ota yhteyttä meille
-              puhelimitse{' '}
+              Olemme avoinna arkisin ma-pe klo 8:00–16.30 osoitteessa Kuormaajantie 6, 40320, Jyväskylä. Ota yhteyttä meille puhelimitse{' '}
               <Link href='tel:0452393591' underline='hover' color='typography.dark'>
                 0452393591
               </Link>{' '}
@@ -66,11 +70,8 @@ const Contacts: React.FC = () => {
               </Stack>
             </Stack>
             <Typography variant='p3'>
-              Olemme iloisia näkemään teidät meidän maisterimme ja tarjoamme teille turvallisen ja miellyttävän palveluaseman.
-            </Typography>
-            <Typography variant='p3'>
-              Löydä meidät helposti Seppäänkangas-alueella! Tämä sijainti tekee meistä täydellisen valinnan sekä koti- että
-              työmatkailijoille etsien korkealaatuisen autonhuollon palveluita lähellä.
+              Löydä meidät helposti Seppäänkangas-alueella! Sijaintimme tekee meistä täydellisen valinnan sekä koti- että työmatkailijoille,
+              jotka etsivät korkealaatuisia autonhuollon palveluita läheltä.
             </Typography>
           </Stack>
         </Stack>
@@ -78,8 +79,7 @@ const Contacts: React.FC = () => {
           <LeafletMap />
         </Box>
         <Typography variant='p3'>
-          Odottamme sinua <b>Jyväskylän Huoltoykköset</b> korjaamossa Seppäänkangas-alueella ja tarjoamme sinulle meidän autonhuollon
-          palveluita.
+          Odottamme sinua <b>Jyväskylän Huoltoykköset</b> korjaamossa Seppäänkankaalla.
         </Typography>
       </Box>
     </>

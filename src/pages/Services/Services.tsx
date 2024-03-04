@@ -19,17 +19,19 @@ const Services: React.FC = () => {
         id='services'
         spacing={3}
         sx={{
-          '&': { color: 'typography.dark' },
+          '&': {
+            color: 'typography.dark',
+          },
         }}
       >
         <Stack spacing={3}>
           <Typography variant='h2'>TÄYDEN PALVELUN AUTOHUOLTO KUSTANNUSTEHOKKAASTI</Typography>
           <Stack spacing={2}>
             <Typography variant='p3'>
-              Autohuoltomme tarjoaa laajan valikoiman palveluita, jotka auttavat ylläpitämään autosi parhaassa kunnossa. Tavoitteemme on
-              tarjota teille luotettavan ja tehokkaan palvelun, joka sisältää kaiken tarvittavan huollon ja korjauksen, yksinkertaisesta
-              teknisestä huollosta raskaisiin korjaustoimenpiteisiin. Toteamme on keskittyä komfortin ja helpottamisen tekemiseen,
-              tarjoamalla korkealaatuisen palvelun ja yksilöllisen lähestymistavan jokaiseen asiakkaaseen.
+              Autohuoltomme kattaa laajan valikoiman palveluita autosi kunnon ylläpitämiseksi. Tavoitteenamme on tarjota luotettavaa ja
+              tehokasta palvelua, kattamaan kaikki tarvittavat huollot ja korjaukset, yksinkertaisista teknisistä huolloista raskaisiin
+              korjaustoimenpiteisiin. Pyrimme tekemään asiakaskokemuksestanne mukavan ja vaivattoman tarjoamalla laadukasta palvelua ja
+              yksilöllistä lähestymistapaa jokaiseen asiakkaaseen.
             </Typography>
             <Typography variant='p3' sx={{ fontWeight: 'bold' }}>
               Palvelumme sisältää:
