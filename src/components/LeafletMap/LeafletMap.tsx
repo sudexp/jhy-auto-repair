@@ -2,6 +2,10 @@ import { Box, Stack, Typography } from '@mui/material';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import * as L from 'leaflet';
 
+import 'leaflet/dist/leaflet.css';
+import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.webpack.css';
+import 'leaflet-defaulticon-compatibility';
+
 const icon = L.icon({
   iconUrl: 'leaflet-marker.svg',
   iconSize: [40, 40],
