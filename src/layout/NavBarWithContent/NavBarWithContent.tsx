@@ -32,7 +32,8 @@ const NavBarWithContent: React.FC = () => {
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundAttachment: 'scroll',
-            height: '100vh',
+            height: '100%',
+            minHeight: '100vh',
             display: 'grid',
             gridTemplateRows: '1fr auto',
           }}
