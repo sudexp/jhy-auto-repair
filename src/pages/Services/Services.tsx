@@ -26,8 +26,8 @@ const Services: React.FC = () => {
           <Typography variant='h2'>TÄYDEN PALVELUN AUTOHUOLTO KUSTANNUSTEHOKKAASTI</Typography>
           <Stack spacing={2}>
             <Typography variant='p3'>
-              Autonhuollonamme tarjoamme laajan valikoiman palveluita, jotka auttavat ylläpitämään autosi parhaassa kunnossa. Tavoitteemme
-              on tarjota teille luotettavan ja tehokkaan palvelun, joka sisältää kaiken tarvittavan huollon ja korjauksen, yksinkertaisesta
+              Autohuoltomme tarjoaa laajan valikoiman palveluita, jotka auttavat ylläpitämään autosi parhaassa kunnossa. Tavoitteemme on
+              tarjota teille luotettavan ja tehokkaan palvelun, joka sisältää kaiken tarvittavan huollon ja korjauksen, yksinkertaisesta
               teknisestä huollosta raskaisiin korjaustoimenpiteisiin. Toteamme on keskittyä komfortin ja helpottamisen tekemiseen,
               tarjoamalla korkealaatuisen palvelun ja yksilöllisen lähestymistavan jokaiseen asiakkaaseen.
             </Typography>
