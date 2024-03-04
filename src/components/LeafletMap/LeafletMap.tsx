@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import * as L from 'leaflet';
 
 const icon = L.icon({
-  iconUrl: '/public/leaflet-marker.svg',
+  iconUrl: 'leaflet-marker.svg',
   iconSize: [40, 40],
   iconAnchor: [25, 30],
   popupAnchor: [-5, -30],
