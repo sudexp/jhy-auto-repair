@@ -26,7 +26,7 @@ const ImageContent: React.FC = () => {
       </Typography>
       <Stack direction='row' spacing={1}>
         <Typography variant='p2'>
-          Palvelemme arkisin ma–pe klo 8:00–16.30 osoitteessa <b>Kuormaajantie 6, 40320, Jyväskylä</b>.
+          Palvelemme ma–pe klo 8:00–16.30 osoitteessa <b>Kuormaajantie 6, 40320, Jyväskylä</b>.
         </Typography>
       </Stack>
       <Stack direction={getDirection(isSmDown)} spacing={1} sx={{ alignItems: getAlignItems(isSmDown) }}>

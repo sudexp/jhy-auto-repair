@@ -36,7 +36,7 @@ const Contacts: React.FC = () => {
               palvelua. Työskentelymme on aina erityisen tarkkaa ja huolellista, mikä takaa teille parhaan mahdollisen lopputuloksen.
             </Typography>
             <Typography variant='p3'>
-              Olemme avoinna arkisin ma-pe klo 8:00–16.30 osoitteessa Kuormaajantie 6, 40320, Jyväskylä. Ota yhteyttä meille puhelimitse{' '}
+              Olemme avoinna arkisin klo 8:00–16.30 osoitteessa Kuormaajantie 6, 40320, Jyväskylä. Ota yhteyttä meille puhelimitse{' '}
               <Link href='tel:0452393591' underline='hover' color='typography.dark'>
                 0452393591
               </Link>{' '}
