@@ -32,7 +32,7 @@ const Contacts: React.FC = () => {
               korkealaatuisen autonhuollon palveluita, jotka perustuvat yli kymmenen vuoden kokemukseen ja ammattitaitoon.
             </Typography>
             <Typography variant='p3'>
-              Huoltomme erottautuu korkealla koulutuksella ja ammattitaitolla, minkä avulla voimme tarjota teille aivan erityislaatuista
+              Huoltomme erottautuu korkealla koulutuksella ja Ammattitaidolla, minkä avulla voimme tarjota teille aivan erityislaatuista
               palvelua. Työskentelymme on aina erityisen tarkkaa ja huolellista, mikä takaa teille parhaan mahdollisen lopputuloksen.
             </Typography>
             <Typography variant='p3'>
