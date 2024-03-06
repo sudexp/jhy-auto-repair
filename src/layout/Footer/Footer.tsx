@@ -20,7 +20,7 @@ const LeftTableCell: React.FC<TableCellProps> = ({ children }: TableCellProps) =
 );
 
 const RightTableCell: React.FC<TableCellProps> = ({ children }: TableCellProps) => (
-  <TableCell sx={{ borderBottom: 'none', color, p: 0, pl: 2 }}>
+  <TableCell sx={{ borderBottom: 'none', color, p: 0, pl: 3 }}>
     <Typography variant='p3'>{children}</Typography>
   </TableCell>
 );
