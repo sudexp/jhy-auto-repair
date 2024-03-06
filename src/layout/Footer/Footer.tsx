@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
       <LayoutContainer sx={{ py: { xs: 2, md: 4 }, bgcolor: getBgColor(isRootPath) }}>
         <Box
           display='grid'
-          gridTemplateColumns='repeat(2, 1fr)'
+          gridTemplateColumns='1fr auto'
           gap={3}
           sx={{
             [`@media (max-width: ${theme.breakpoints.values.sm}px)`]: {
