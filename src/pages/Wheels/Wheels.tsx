@@ -60,7 +60,7 @@ const Wheels: React.FC = () => {
                     position: 'absolute',
                     bottom: 0,
                     right: 0,
-                    color: typographyColors.light,
+                    color: typographyColors.dark,
                     textDecoration: 'none',
                     fontSize: '0.5rem',
                     ml: 0.5,
