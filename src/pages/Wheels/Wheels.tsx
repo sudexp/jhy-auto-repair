@@ -50,22 +50,21 @@ const Wheels: React.FC = () => {
           </Box>
           <Box gridColumn='span 1'>
             <Stack spacing={1}>
-              <Box
-                component='img'
-                sx={{ display: 'block', maxHeight: '100%', maxWidth: '100%', position: 'relative' }}
-                alt='Rengashotelli'
-                src='hotel.jpg'
-              />
-              <Box
-                sx={{
-                  position: 'absolute',
-                }}
-              >
+              <Box sx={{ position: 'relative' }}>
+                <Box component='img' src='hotel.jpg' alt='Rengashotelli' sx={{ display: 'block', maxHeight: '100%', maxWidth: '100%' }} />
                 <Link
                   href='https://www.freepik.com'
                   target='_blank'
                   rel='noopener noreferrer'
-                  sx={{ color: typographyColors.light, textDecoration: 'none', fontSize: '0.5rem', ml: 0.5 }}
+                  sx={{
+                    position: 'absolute',
+                    bottom: 0,
+                    right: 0,
+                    color: typographyColors.light,
+                    textDecoration: 'none',
+                    fontSize: '0.5rem',
+                    ml: 0.5,
+                  }}
                 >
                   designed by fxquadro - Freepik.com
                 </Link>
