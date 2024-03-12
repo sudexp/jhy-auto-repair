@@ -14,13 +14,15 @@ import {
   ListItemText,
   Toolbar,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
 import { bgColors } from 'theme/colors';
 
 import Logo from './Logo';
-import { getBorderBottom, getColor, getCursor, getDisableRipple, getTextShadow } from './utils';
+import { getBorderBottom, getMarginBottom, getColor, getCursor, getDisableRipple, getTextShadow } from './utils';
 
 const navItems = [
   { name: 'PALVELUT', path: '/services' },
@@ -30,6 +32,8 @@ const navItems = [
 const NavBar: React.FC = () => {
   const isRootPath = !!useMatch('/');
   const { pathname } = useLocation();
+  const theme = useTheme();
+  const isSmDown = useMediaQuery(theme.breakpoints.down('sm'));
 
   const [isOpen, setIsOpen] = useState(false);
   const handleDrawerToggle = () => setIsOpen((prevState) => !prevState);
@@ -45,7 +49,7 @@ const NavBar: React.FC = () => {
         sx={{
           borderBottom: getBorderBottom(isRootPath),
           borderBottomColor: bgColors.light,
-          mb: 3,
+          mb: getMarginBottom(isSmDown),
         }}
       >
         <Toolbar disableGutters>

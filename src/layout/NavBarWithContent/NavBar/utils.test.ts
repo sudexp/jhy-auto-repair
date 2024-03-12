@@ -1,6 +1,6 @@
 import { bgColors, redColors, typographyColors } from 'theme/colors';
 
-import { getBorderBottom, getColor, getCursor, getDisableRipple, getTextShadow } from './utils';
+import { getBorderBottom, getMarginBottom, getColor, getCursor, getDisableRipple, getTextShadow } from './utils';
 
 describe('Navbar getBorderBottom', () => {
   it('returns "none" if isRootPath is true', () => {
@@ -14,6 +14,20 @@ describe('Navbar getBorderBottom', () => {
     const result = getBorderBottom(false);
 
     expect(result).toBe(expectedResult);
+  });
+});
+
+describe('Navbar getMarginBottom', () => {
+  it('returns 0 if isSmDown is true', () => {
+    const result = getMarginBottom(true);
+
+    expect(result).toBe(0);
+  });
+
+  it('returns 3 if isSmDown is false', () => {
+    const result = getMarginBottom(false);
+
+    expect(result).toBe(3);
   });
 });
 

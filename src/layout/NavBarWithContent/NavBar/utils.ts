@@ -1,10 +1,14 @@
 import { bgColors, redColors, typographyColors } from 'theme/colors';
 
-export const getBorderBottom = (isRootPath: boolean) => {
+export const getBorderBottom = (isRootPath: boolean): string => {
   return isRootPath ? 'none' : `1px solid ${bgColors.light}`;
 };
 
-export const getTextShadow = (isSelected: boolean, isOpen: boolean) => {
+export const getMarginBottom = (isSmDown: boolean): number => {
+  return isSmDown ? 0 : 3;
+};
+
+export const getTextShadow = (isSelected: boolean, isOpen: boolean): string => {
   if (isSelected && isOpen) {
     return `1px 0 0 ${typographyColors.dark}`;
   }
@@ -16,14 +20,14 @@ export const getTextShadow = (isSelected: boolean, isOpen: boolean) => {
   return 'none';
 };
 
-export const getColor = (isRootPath: boolean) => {
+export const getColor = (isRootPath: boolean): string => {
   return isRootPath ? bgColors.light : redColors.dark;
 };
 
-export const getCursor = (isSelected: boolean) => {
+export const getCursor = (isSelected: boolean): 'default' | 'pointer' => {
   return isSelected ? 'default' : 'pointer';
 };
 
-export const getDisableRipple = (isSelected: boolean) => {
+export const getDisableRipple = (isSelected: boolean): boolean => {
   return !!isSelected;
 };
