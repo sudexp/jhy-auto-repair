@@ -1,1 +1,1 @@
-export const getSpacing = (isRootPath: boolean) => (isRootPath ? 0 : 3);
+export const getSpacing = (isRootPath: boolean): number => (isRootPath ? 0 : 3);

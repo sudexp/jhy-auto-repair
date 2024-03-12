@@ -1,7 +1,7 @@
-export const getDirection = (isSmDown: boolean) => {
+export const getDirection = (isSmDown: boolean): 'column' | 'row' => {
   return isSmDown ? 'column' : 'row';
 };
 
-export const getAlignItems = (isSmDown: boolean) => {
+export const getAlignItems = (isSmDown: boolean): 'flex-start' | 'center' => {
   return isSmDown ? 'flex-start' : 'center';
 };
