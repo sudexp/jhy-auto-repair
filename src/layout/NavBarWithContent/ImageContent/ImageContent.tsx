@@ -26,7 +26,7 @@ const ImageContent: React.FC = () => {
         </Stack>
         <Stack spacing={1}>
           <Typography variant='p2b'>Luottamuksellinen autonhuollon kumppanisi!</Typography>
-          <Typography variant='p2'>
+          <Typography variant='p2' sx={{ maxWidth: '1000px' }}>
             Tervetuloa paremman autohuollon asiakkaaksi. Tarjoamme teille korkealaatuisia autonhuollon palveluita, jotka perustuvat yli
             kymmenen vuoden kokemukseen ja ammattitaitoon. Tarkoituksemme on auttaa teitä löytämään parhaat autonhuollon ratkaisut ja
             tarjota ne edullisesti.
