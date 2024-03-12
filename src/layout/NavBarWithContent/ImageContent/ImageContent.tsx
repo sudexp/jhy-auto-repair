@@ -24,11 +24,9 @@ const ImageContent: React.FC = () => {
         vuoden kokemukseen ja ammattitaitoon. Tarkoituksemme on auttaa teitä löytämään parhaat autonhuollon ratkaisut ja tarjota ne
         edullisesti.
       </Typography>
-      <Stack direction='row' spacing={1}>
-        <Typography variant='p2'>
-          Palvelemme ma–pe klo 8:00–16.30 osoitteessa <b>Kuormaajantie 6, 40320, Jyväskylä</b>.
-        </Typography>
-      </Stack>
+      <Typography variant='p2'>
+        Palvelemme ma–pe klo 8:00–16.30 osoitteessa <b>Kuormaajantie 6, 40320, Jyväskylä</b>.
+      </Typography>
       <Stack direction={getDirection(isSmDown)} spacing={1} sx={{ alignItems: getAlignItems(isSmDown) }}>
         <Typography variant='p2'>Ota yhteyttä meille puhelimitse: </Typography>
         <PhoneLink phoneNumber='0452393591' />
