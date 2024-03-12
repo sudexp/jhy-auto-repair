@@ -2,7 +2,7 @@ import { Box, Divider, Stack, Typography, useMediaQuery, useTheme } from '@mui/m
 
 import PhoneLink from 'components/PhoneLink';
 
-import { getAlignItems, getDirection } from './utils';
+import { getSpacing, getJustifyContent, getHeightPx, getDirection, getAlignItems } from './utils';
 
 const ImageContent: React.FC = () => {
   const theme = useTheme();
@@ -10,11 +10,11 @@ const ImageContent: React.FC = () => {
 
   return (
     <Stack
-      spacing={2}
+      spacing={getSpacing(isSmDown)}
       sx={{
         '&': {
-          justifyContent: 'space-between',
-          height: 'calc(100% - 100px)', // 80px (mobile)/ 88px(desktop) is the height of the navbar
+          justifyContent: getJustifyContent(isSmDown),
+          height: getHeightPx(isSmDown),
           color: 'typography.light',
         },
       }}
