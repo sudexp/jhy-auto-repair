@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
         <Box
           display='grid'
           gridTemplateColumns='1fr auto'
-          gap={3}
+          gap={1}
           sx={{
             [`@media (max-width: ${theme.breakpoints.values.sm}px)`]: {
               gridTemplateColumns: 'repeat(1,  1fr)',
