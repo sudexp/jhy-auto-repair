@@ -10,8 +10,8 @@ const Wheels: React.FC = () => {
     <>
       <Seo
         title='Jyväskylän Huoltoykköset - Rengasmyynti ja rengashotelli'
-        description='Korjaamo Jyväskylä, autohuolto Jyväskylä, Rengasmyynti ja rengashotelli Jyväskylä'
-        name='Jyväskylän Huoltoykköset - Rengasmyynti ja rengashotelli'
+        description='Rengasmyynti ja rengashotelli Jyväskylä'
+        name='Jyväskylän Huoltoykköset: Rengasmyynti ja rengashotelli'
         type='website'
       />
       <Stack id='wheels' spacing={3} sx={{ '&': { color: 'typography.dark' } }}>

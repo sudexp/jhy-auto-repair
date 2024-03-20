@@ -5,7 +5,7 @@ const Root: React.FC = () => {
     <Seo
       title='Jyväskylän Huoltoykköset - Etusivu'
       description='Edullinen korjaamo Jyväskylä, autohuolto Jyväskylä, autopalvelu Jyväskylä, Jyväskylän Huoltoykköset'
-      name='Jyväskylän Huoltoykköset'
+      name='Jyväskylän Huoltoykköset: Etusivu'
       type='website'
     />
   );
