@@ -11,8 +11,8 @@ const Services: React.FC = () => {
     <>
       <Seo
         title='Jyväskylän Huoltoykköset - Palvelut'
-        description='Korjaamo Jyväskylä, autohuolto Jyväskylä, autopalvelu Jyväskylä'
-        name='Jyväskylän Huoltoykköset - Palvelut'
+        description='Kausisäilytys, henkilö- ja pakettiautojen kaikki huollot ja korjaukset, renkaiden tasapainotus ja 3D-suuntaus, määräaikaishuollot – autosi takuu säilyy, sisätilalämmittimet Jyväkylä, henkilöauton ja pakettiauton käynnistimet, akut, laturit Jyväkylä, Jakopää huollot- ja korjaukset, Ohjaus- ja jousitus työt, Polttoainejarjestelmien huollot sekä korjaukset, Voimansiirron huollot ja korjaukset, sijaisautot huollon tai korjauksen ajaksi, Ilmastointi huolto ja korjaus, vikadiagnostiikka ja raportointi, ruostevauriokorjaukset, päästömittaukset ja diagnostiikat, öljynvaihdot, jäähdytysjärjestelmän huollot- ja korjaukset, jarrujen huollot- ja korjaukset, pakokaasujärjestelmien korjaustyöt'
+        name='Jyväskylän Huoltoykköset: Palvelut'
         type='website'
       />
       <Stack
