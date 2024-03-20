@@ -10,8 +10,8 @@ const Contacts: React.FC = () => {
     <>
       <Seo
         title='Jyväskylän Huoltoykköset - Yhteystiedot'
-        description='Korjaamo Jyväskylä, autohuolto Jyväskylä, Seppälänkangas Jyväskylä autokorjaamo yhteystiedot'
-        name='Jyväskylän Huoltoykköset - Yhteystiedot'
+        description='Jyväskylän Huoltoykköset autokorjaamo yhteystiedot (Seppälänkangas)'
+        name='Jyväskylän Huoltoykköset: Yhteystiedot'
         type='website'
       />
       <Box
