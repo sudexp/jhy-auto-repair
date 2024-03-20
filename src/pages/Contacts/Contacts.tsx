@@ -70,8 +70,8 @@ const Contacts: React.FC = () => {
               </Stack>
             </Stack>
             <Typography variant='p3'>
-              Löydä meidät helposti Seppäänkankaalta! Sijaintimme tekee meistä täydellisen valinnan sekä koti- että työmatkailijoille, jotka
-              etsivät korkealaatuisia autonhuollon palveluita läheltä.
+              Löydä meidät helposti Seppälänkankaalta! Sijaintimme tekee meistä täydellisen valinnan sekä koti- että työmatkailijoille,
+              jotka etsivät korkealaatuisia autonhuollon palveluita läheltä.
             </Typography>
           </Stack>
         </Stack>
