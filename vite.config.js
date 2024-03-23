@@ -16,9 +16,10 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
   },
-  // build: {
-  //   outDir: 'build',
-  // },
+  build: {
+    sourcemap: true,
+    // outDir: 'build',
+  },
   define: {
     'process.env.RUNNING_TEST': false,
   },
