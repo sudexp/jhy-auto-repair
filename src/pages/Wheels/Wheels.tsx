@@ -38,7 +38,7 @@ const Wheels: React.FC = () => {
         >
           <Box gridColumn='span 1'>
             <Stack spacing={1}>
-              <Box component='img' sx={{ display: 'block', maxHeight: '100%', maxWidth: '100%' }} alt='Rengasmyynti' src='wheels.jpg' />
+              <Box component='img' src='wheels.avif' alt='Rengasmyynti' sx={{ display: 'block', maxHeight: '100%', maxWidth: '100%' }} />
               <Stack spacing={1}>
                 <Typography variant='p2'>RENGASMYYNTI</Typography>
                 <Typography variant='p3'>
@@ -51,7 +51,7 @@ const Wheels: React.FC = () => {
           <Box gridColumn='span 1'>
             <Stack spacing={1}>
               <Box sx={{ position: 'relative' }}>
-                <Box component='img' src='hotel.jpg' alt='Rengashotelli' sx={{ display: 'block', maxHeight: '100%', maxWidth: '100%' }} />
+                <Box component='img' src='hotel.avif' alt='Rengashotelli' sx={{ display: 'block', maxHeight: '100%', maxWidth: '100%' }} />
                 <Link
                   href='https://www.freepik.com'
                   target='_blank'

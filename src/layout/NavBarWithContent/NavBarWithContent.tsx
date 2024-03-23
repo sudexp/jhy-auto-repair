@@ -2,7 +2,7 @@ import { Outlet, useMatch } from 'react-router-dom';
 import { Box } from '@mui/material';
 
 import LayoutContainer from 'components/LayoutContainer';
-import bgImage from 'assets/jpg/bgImage.jpg';
+import bgImage from 'assets/jpg/bgImage.avif';
 import Footer from 'layout/Footer';
 
 import NavBar from './NavBar';
