@@ -5,7 +5,7 @@ import LeftTableCell from './LeftTableCell';
 import RightTableCell from './RightTableCell/RightTableCell';
 import CustomLink from './CustomLink';
 
-const height = '32px';
+const height = '28px';
 
 const ContentTable: React.FC = () => {
   return (
