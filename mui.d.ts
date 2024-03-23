@@ -1,4 +1,3 @@
-/* eslint-disable max-lines */
 import '@mui/material/styles/createPalette';
 
 declare module '@mui/material/styles' {

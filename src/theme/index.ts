@@ -1,4 +1,3 @@
-/* eslint-disable max-lines */
 import { createTheme } from '@mui/material/styles';
 
 import { bgColors, redColors, typographyColors } from './colors';
