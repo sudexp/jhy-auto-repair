@@ -1,8 +1,11 @@
 import { Link as RouterLink } from 'react-router-dom';
-import { Link, Table, TableBody, TableContainer, TableRow, Typography } from '@mui/material';
+import { Table, TableBody, TableContainer, TableRow, Typography } from '@mui/material';
 
 import LeftTableCell from './LeftTableCell';
 import RightTableCell from './RightTableCell/RightTableCell';
+import CustomLink from './CustomLink';
+
+const height = '32px';
 
 const ContentTable: React.FC = () => {
   return (
@@ -18,6 +21,9 @@ const ContentTable: React.FC = () => {
                 variant='p3'
                 sx={{
                   '& a': {
+                    display: 'flex',
+                    alignItems: 'center',
+                    height,
                     color: 'typography.light',
                     textDecoration: 'none',
                     '&:hover': {
@@ -36,9 +42,9 @@ const ContentTable: React.FC = () => {
             </LeftTableCell>
             <RightTableCell>
               <Typography variant='p3'>
-                <Link href='tel:0452393591' underline='hover' color='typography.light'>
+                <CustomLink href='tel:0452393591' height={height}>
                   0452393591
-                </Link>
+                </CustomLink>
               </Typography>
             </RightTableCell>
           </TableRow>
@@ -48,9 +54,9 @@ const ContentTable: React.FC = () => {
             </LeftTableCell>
             <RightTableCell>
               <Typography variant='p3'>
-                <Link href='mailto:huoltoykkoset@gmail.com' underline='hover' color='typography.light'>
+                <CustomLink href='mailto:huoltoykkoset@gmail.com' height={height}>
                   huoltoykkoset@gmail.com
-                </Link>
+                </CustomLink>
               </Typography>
             </RightTableCell>
           </TableRow>
@@ -60,9 +66,9 @@ const ContentTable: React.FC = () => {
             </LeftTableCell>
             <RightTableCell>
               <Typography variant='p3'>
-                <Link href='mailto:huoltoykkoset@gmail.com' underline='hover' color='typography.light'>
+                <CustomLink href='mailto:huoltoykkoset@gmail.com' height={height}>
                   huoltoykkoset.laskutus@gmail.com
-                </Link>
+                </CustomLink>
               </Typography>
             </RightTableCell>
           </TableRow>
@@ -71,7 +77,9 @@ const ContentTable: React.FC = () => {
               <Typography variant='p3'>Y-tunnus:</Typography>
             </LeftTableCell>
             <RightTableCell>
-              <Typography variant='p3'>3422467-8</Typography>
+              <Typography variant='p3' sx={{ display: 'flex', alignItems: 'center', height }}>
+                3422467-8
+              </Typography>
             </RightTableCell>
           </TableRow>
         </TableBody>
