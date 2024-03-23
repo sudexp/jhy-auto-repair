@@ -1,7 +1,8 @@
+import { Suspense, lazy } from 'react';
 import { Avatar, Box, Link, Stack, Typography, useTheme } from '@mui/material';
 
 import Seo from 'components/Seo';
-import LeafletMap from 'components/LeafletMap';
+const LazyLeafletMap = lazy(() => import('components/LeafletMap'));
 
 const Contacts: React.FC = () => {
   const theme = useTheme();
@@ -75,8 +76,10 @@ const Contacts: React.FC = () => {
             </Typography>
           </Stack>
         </Stack>
-        <Box id='contacts' sx={{ maxWidth: theme.breakpoints.values.lg /* , margin: '0 auto' */ }}>
-          <LeafletMap />
+        <Box id='map' sx={{ maxWidth: theme.breakpoints.values.lg /* , margin: '0 auto' */ }}>
+          <Suspense fallback={<Box>Ladataan karttaa...</Box>}>
+            <LazyLeafletMap />
+          </Suspense>
         </Box>
         <Typography variant='p3'>
           Odottamme sinua <b>Jyväskylän Huoltoykköset</b> korjaamossa Seppäänkankaalla.
