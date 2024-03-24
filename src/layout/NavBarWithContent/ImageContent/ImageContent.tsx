@@ -2,7 +2,7 @@ import { Divider, Stack, Typography, useMediaQuery, useTheme } from '@mui/materi
 
 import PhoneLink from 'components/PhoneLink';
 
-import { getHeightPx, getDirection, getAlignItems } from './utils';
+import { getHeightPx } from './utils';
 
 const ImageContent: React.FC = () => {
   const theme = useTheme();
@@ -35,8 +35,8 @@ const ImageContent: React.FC = () => {
         <Typography variant='p2'>
           Palvelemme ma–pe klo 8:00–16.30 osoitteessa <b>Kuormaajantie 6, 40320, Jyväskylä</b>.
         </Typography>
-        <Stack direction={getDirection(isSmDown)} spacing={1} sx={{ alignItems: getAlignItems(isSmDown) }}>
-          <Typography variant='p2'>Ota yhteyttä meille puhelimitse: </Typography>
+        <Stack direction='row' spacing={1} sx={{ alignItems: 'center' }}>
+          <Typography variant='p2'>Soita meille: </Typography>
           <PhoneLink phoneNumber='0452393591' />
         </Stack>
       </Stack>
