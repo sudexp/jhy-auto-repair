@@ -1,18 +1,4 @@
-import { getHeightPx, getJustifyContent, getDirection, getAlignItems } from './utils';
-
-describe('ImageContent getJustifyContent', () => {
-  it('returns flex-start when isSmDown is true', () => {
-    const result = getJustifyContent(true);
-
-    expect(result).toBe('flex-start');
-  });
-
-  it('returns space-between when isSmDown is false', () => {
-    const result = getJustifyContent(false);
-
-    expect(result).toBe('space-between');
-  });
-});
+import { getHeightPx, getDirection, getAlignItems } from './utils';
 
 describe('ImageContent getHeightPx', () => {
   it('returns calc(100% - 56px) when isSmDown is true', () => {

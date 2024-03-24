@@ -2,7 +2,7 @@ import { Divider, Stack, Typography, useMediaQuery, useTheme } from '@mui/materi
 
 import PhoneLink from 'components/PhoneLink';
 
-import { getJustifyContent, getHeightPx, getDirection, getAlignItems } from './utils';
+import { getHeightPx, getDirection, getAlignItems } from './utils';
 
 const ImageContent: React.FC = () => {
   const theme = useTheme();
@@ -13,7 +13,7 @@ const ImageContent: React.FC = () => {
       spacing={2}
       sx={{
         '&': {
-          justifyContent: getJustifyContent(isSmDown),
+          justifyContent: 'space-between',
           height: getHeightPx(isSmDown),
           color: 'typography.light',
         },
