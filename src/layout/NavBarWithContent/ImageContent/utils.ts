@@ -1,7 +1,3 @@
-export const getSpacing = (isSmDown: boolean): 1 | 2 => {
-  return isSmDown ? 1 : 2;
-};
-
 export const getJustifyContent = (isSmDown: boolean): 'flex-start' | 'space-between' => {
   return isSmDown ? 'flex-start' : 'space-between';
 };
