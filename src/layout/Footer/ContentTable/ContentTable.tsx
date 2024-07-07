@@ -66,7 +66,7 @@ const ContentTable: React.FC = () => {
             </LeftTableCell>
             <RightTableCell>
               <Typography variant='p3'>
-                <CustomLink href='mailto:huoltoykkoset@gmail.com' height={height}>
+                <CustomLink href='mailto:huoltoykkoset.laskutus@gmail.com' height={height}>
                   huoltoykkoset.laskutus@gmail.com
                 </CustomLink>
               </Typography>
