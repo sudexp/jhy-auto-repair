@@ -11,7 +11,7 @@ const NotFound: React.FC = () => {
         Valitettavasti emme löydä tätä sivua.
       </Typography>
       <Typography variant='p1'>
-        <Link component={RouterLink} to='/' sx={{ display: 'block' }}>
+        <Link component={RouterLink} to='/'>
           Etusivulle
         </Link>
       </Typography>
