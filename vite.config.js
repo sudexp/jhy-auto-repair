@@ -22,5 +22,6 @@ export default defineConfig({
   },
   define: {
     'process.env.RUNNING_TEST': false,
+    __APP_ENV__: import.meta.env.VITE_GOOGLE_ANALYTICS_ID,
   },
 });
