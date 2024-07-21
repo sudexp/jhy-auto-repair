@@ -22,6 +22,6 @@ export default defineConfig({
   },
   define: {
     'process.env.RUNNING_TEST': false,
-    'process.env.VITE_GOOGLE_ANALYTICS_ID': process.env.VITE_GOOGLE_ANALYTICS_ID, // eslint-disable-line no-undef
+    'process.env.VITE_GOOGLE_ANALYTICS_ID': JSON.stringify(process.env.VITE_GOOGLE_ANALYTICS_ID), // eslint-disable-line no-undef
   },
 });
