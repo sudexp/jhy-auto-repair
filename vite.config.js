@@ -24,5 +24,7 @@ export default defineConfig({
     'process.env.RUNNING_TEST': false,
     // eslint-disable-next-line no-undef
     __APP_ENV__: JSON.stringify(process.env.VITE_GOOGLE_ANALYTICS_ID),
+    // eslint-disable-next-line no-undef
+    'process.env.VITE_GOOGLE_ANALYTICS_ID': JSON.stringify(process.env.VITE_GOOGLE_ANALYTICS_ID),
   },
 });
